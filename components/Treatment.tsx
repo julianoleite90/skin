@@ -77,7 +77,7 @@ export default function Treatment() {
             <div className="text-center md:text-left">
               <button 
                 onClick={handleBuyClick}
-                className="w-full md:w-auto bg-gradient-to-r from-gray-600 via-gray-700 to-gray-800 hover:from-gray-700 hover:via-gray-800 hover:to-gray-900 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg"
+                className="w-full md:w-auto bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 hover:from-amber-500 hover:via-yellow-600 hover:to-amber-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg"
               >
                 COMPRAR AGORA
               </button>

@@ -33,7 +33,7 @@ export default function Kits() {
             
             <div className="space-y-4">
               <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg">
-                <div className="w-6 h-6 bg-green-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-6 h-6 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -45,7 +45,7 @@ export default function Kits() {
               </div>
 
               <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg">
-                <div className="w-6 h-6 bg-green-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-6 h-6 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -57,7 +57,7 @@ export default function Kits() {
               </div>
 
               <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg">
-                <div className="w-6 h-6 bg-green-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-6 h-6 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -69,7 +69,7 @@ export default function Kits() {
               </div>
 
               <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg">
-                <div className="w-6 h-6 bg-green-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-6 h-6 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -81,7 +81,7 @@ export default function Kits() {
               </div>
 
               <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg">
-                <div className="w-6 h-6 bg-green-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-6 h-6 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -93,7 +93,7 @@ export default function Kits() {
               </div>
 
               <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg">
-                <div className="w-6 h-6 bg-green-800 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-6 h-6 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -106,14 +106,17 @@ export default function Kits() {
             </div>
 
             <div className="pt-4">
-            <a 
-              href="https://full.sale/nQSHAk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full bg-gradient-to-r from-gray-600 via-gray-700 to-gray-800 hover:from-gray-700 hover:via-gray-800 hover:to-gray-900 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg inline-block text-center"
+            <button 
+              onClick={() => {
+                const treatmentSection = document.getElementById('treatment');
+                if (treatmentSection) {
+                  treatmentSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="w-full bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 hover:from-amber-500 hover:via-yellow-600 hover:to-amber-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg"
             >
               COMPRAR AGORA
-            </a>
+            </button>
             </div>
           </div>
 
