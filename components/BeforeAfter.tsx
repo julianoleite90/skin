@@ -26,7 +26,8 @@ export default function BeforeAfter() {
 
   const handleTouchMove = (e: React.TouchEvent) => {
     if (!isDragging || !containerRef.current) return
-
+    
+    e.preventDefault() // Previne scroll durante o drag
     const rect = containerRef.current.getBoundingClientRect()
     const x = e.touches[0].clientX - rect.left
     const percentage = (x / rect.width) * 100
@@ -45,8 +46,8 @@ export default function BeforeAfter() {
     }
 
     if (isDragging) {
-      document.addEventListener('mousemove', handleGlobalMouseMove)
-      document.addEventListener('mouseup', handleGlobalMouseUp)
+      document.addEventListener('mousemove', handleGlobalMouseMove, { passive: true })
+      document.addEventListener('mouseup', handleGlobalMouseUp, { passive: true })
     }
 
     return () => {
@@ -108,19 +109,32 @@ export default function BeforeAfter() {
               {/* Image Container */}
               <div 
                 ref={containerRef}
-                className="relative overflow-hidden rounded-lg shadow-2xl cursor-grab active:cursor-grabbing"
+                className="relative overflow-hidden rounded-lg shadow-2xl cursor-grab active:cursor-grabbing select-none"
                 onMouseMove={handleMouseMove}
                 onMouseUp={handleMouseUp}
                 onMouseLeave={handleMouseUp}
                 onTouchMove={handleTouchMove}
                 onTouchEnd={handleMouseUp}
+                onDragStart={(e) => e.preventDefault()}
+                onContextMenu={(e) => e.preventDefault()}
+                style={{ 
+                  userSelect: 'none', 
+                  WebkitUserSelect: 'none', 
+                  MozUserSelect: 'none', 
+                  msUserSelect: 'none',
+                  touchAction: 'none'
+                }}
               >
                 {/* After Image (Background) - Right side */}
                 <div className="relative">
                   <img 
                     src="/images/1depois.png" 
                     alt="Depois - Pele firme e tonificada" 
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-cover select-none pointer-events-none"
+                    draggable={false}
+                    onDragStart={(e) => e.preventDefault()}
+                    onContextMenu={(e) => e.preventDefault()}
+                    style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none', msUserSelect: 'none' }}
                   />
                   {/* After Label */}
                   <div className="absolute top-4 right-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -130,13 +144,17 @@ export default function BeforeAfter() {
 
                 {/* Before Image (Overlay) - Left side */}
                 <div 
-                  className="absolute top-0 left-0 h-full overflow-hidden"
+                  className={`absolute top-0 left-0 h-full overflow-hidden ${!isDragging ? 'transition-all duration-200 ease-out' : ''}`}
                   style={{ width: `${sliderPosition}%` }}
                 >
                   <img 
                     src="/images/1antes.png" 
                     alt="Antes - Pele com flacidez" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover select-none pointer-events-none"
+                    draggable={false}
+                    onDragStart={(e) => e.preventDefault()}
+                    onContextMenu={(e) => e.preventDefault()}
+                    style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none', msUserSelect: 'none' }}
                   />
                   {/* Before Label */}
                   <div className="absolute top-4 left-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -146,7 +164,7 @@ export default function BeforeAfter() {
 
                 {/* Slider Line */}
                 <div 
-                  className="absolute top-0 bottom-0 w-0.5 bg-white shadow-lg z-10"
+                  className={`absolute top-0 bottom-0 w-0.5 bg-white shadow-lg z-10 ${!isDragging ? 'transition-all duration-200 ease-out' : ''}`}
                   style={{ left: `${sliderPosition}%` }}
                 >
                   {/* Slider Handle */}
