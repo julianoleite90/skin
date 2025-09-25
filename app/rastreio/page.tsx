@@ -75,7 +75,7 @@ export default function RastreioPage() {
   const calcularDataStatus = (dataPedido: string, diasAdicionais: number) => {
     const data = new Date(dataPedido);
     data.setDate(data.getDate() + diasAdicionais);
-    return formatarData(data);
+    return formatarData(data.toISOString().split('T')[0]);
   };
 
   const steps = [
