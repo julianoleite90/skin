@@ -9,7 +9,7 @@ export default function Features() {
           O seu lifiting diário. Veja o resultados de alguns clientes
         </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Recebemos muitos depoimentos de mulheres que transformaram sua pele com o antiflacidez. 
+            Recebemos muitos depoimentos de mulheres que transformaram sua pele com o kit antiflacidez. 
             Veja os depoimentos fotos reais de quem já experimentou.
           </p>
         </div>

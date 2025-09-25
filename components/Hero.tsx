@@ -41,14 +41,14 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-              <span className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">Pele mais firme</span><br />
-              Menos flacidez
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+              <span className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">Transforme sua pele:</span><br />
+              Firmeza e juventude sem cirurgia!
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl text-gray-600 leading-relaxed pt-2 md:pt-8 lg:pt-8">
-              O segredo para uma pele mais firme e rejuvenescida, com apenas 15 minutos por dia, você realiza o seu lifting diário e dá adeus as rugas, flacidez e linhas de expressão.
+              Rejuvenesça sua pele com o poder do kit antiflacidez. Diga adeus à flacidez, rugas e linhas de expressão em apenas 15 minutos por dia para uma aparência jovem e vibrante.
             </p>
 
 

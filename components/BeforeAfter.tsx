@@ -67,7 +67,7 @@ export default function BeforeAfter() {
             Pele Renovada
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Veja a transformação incrível que o Antiflacidez L&L Skin pode fazer na sua pele em apenas algumas semanas
+            Veja a transformação incrível que o kit antiflacidez L&L Skin pode fazer na sua pele em apenas algumas semanas
           </p>
         </div>
 
