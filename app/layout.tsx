@@ -2,13 +2,56 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Antiflacidez Facial L&L Skin - O fim da flacidez',
-  description: 'Solução eficaz contra flacidez no rosto, bolsas, rugas, pé de galinha, linhas de expressão.',
-  keywords: 'antiflacidez facial, flacidez, rugas, pé de galinha, linhas de expressão, bolsas, L&L Skin',
+  title: 'Antiflacidez Facial L&L Skin - O fim da flacidez | Tratamento Profissional',
+  description: 'Acabe com a flacidez facial! Antiflacidez L&L Skin com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias. Frete grátis!',
+  keywords: 'antiflacidez facial, flacidez, lifting facial, rugas, linhas de expressão, pele firme, tratamento facial, hot mode, cold mode, L&L Skin, massageador facial, colágeno, elastina, rejuvenescimento, beleza, estética, skincare, anti-aging',
+  authors: [{ name: 'L&L Skin' }],
+  creator: 'L&L Skin',
+  publisher: 'L&L Skin',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://anti-flacidez.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Antiflacidez Facial L&L Skin - O fim da flacidez',
-    description: 'Solução eficaz contra flacidez no rosto, bolsas, rugas, pé de galinha, linhas de expressão.',
+    description: 'Acabe com a flacidez facial! Antiflacidez L&L Skin com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias.',
+    url: 'https://anti-flacidez.com',
+    siteName: 'Antiflacidez L&L Skin',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Antiflacidez Facial L&L Skin - Tratamento Profissional',
+      },
+    ],
+    locale: 'pt_BR',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Antiflacidez Facial L&L Skin - O fim da flacidez',
+    description: 'Acabe com a flacidez facial! Antiflacidez L&L Skin com tecnologia hot/cold mode. Resultados em 15 minutos/dia.',
+    images: ['/images/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'G-GEJ71JEFEM',
   },
 }
 

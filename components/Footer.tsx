@@ -37,7 +37,7 @@ export default function Footer() {
               <div className="space-y-4 px-4 md:px-0">
                 <div>
                   <p className="text-base font-bold text-gray-900 mb-2">Contato</p>
-                  <p className="text-sm md:text-base text-gray-600 break-all">contato@tecnoartho.com</p>
+                  <p className="text-sm md:text-base text-gray-600 break-all">contato@anti-flacidez.com</p>
                   <p className="text-sm md:text-base text-gray-600">(41) 98454-9172 (whatsapp)</p>
                 </div>
                 
@@ -58,13 +58,16 @@ export default function Footer() {
             <div className="space-y-6 text-center md:text-left">
               <h3 className="text-lg md:text-xl font-bold text-gray-900">Links Úteis</h3>
               <div className="grid grid-cols-1 gap-3 px-4 md:px-0">
-                <a href="#" className="block text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors py-1">
+                <a href="/politica-privacidade" className="block text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors py-1">
                   Política de Privacidade
                 </a>
-                <a href="#" className="block text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors py-1">
+                <a href="/termos-uso" className="block text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors py-1">
                   Termos de Uso
                 </a>
-                <a href="#" className="block text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors py-1">
+                <a href="/devolucao" className="block text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors py-1">
+                  Devolução
+                </a>
+                <a href="/rastreio" className="block text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors py-1">
                   Rastrear Pedido
                 </a>
                 <a href="/garantia" className="block text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors py-1">
@@ -78,7 +81,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-200 py-4 text-center">
           <p className="text-gray-600 text-sm">
-            © 2024 SkinLift Pro. Todos os direitos reservados.
+            © 2025 Antiflacidez L&L Skin - Todos os direitos reservados.
           </p>
         </div>
       </div>

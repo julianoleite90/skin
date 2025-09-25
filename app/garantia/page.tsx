@@ -5,8 +5,18 @@ import Script from 'next/script'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Garantia - Antiflacidez Facial L&L Skin',
-  description: 'Garantia de 180 dias para o Antiflacidez Facial L&L Skin. Proteção completa contra defeitos e falhas.',
+  title: 'Garantia de 180 Dias - Antiflacidez L&L Skin | Proteção Total',
+  description: 'Garantia de 180 dias para o Antiflacidez L&L Skin. Proteção completa contra defeitos e falhas. Troca grátis em caso de problemas.',
+  keywords: 'garantia antiflacidez, garantia 180 dias, proteção produto, troca grátis, defeitos fabricação, L&L Skin, política garantia, proteção total',
+  openGraph: {
+    title: 'Garantia de 180 Dias - Antiflacidez L&L Skin',
+    description: 'Garantia de 180 dias para o Antiflacidez L&L Skin. Proteção completa contra defeitos e falhas.',
+    url: 'https://anti-flacidez.com/garantia',
+    images: ['/images/og-garantia.jpg'],
+  },
+  alternates: {
+    canonical: '/garantia',
+  },
 }
 
 export default function Garantia() {
@@ -115,7 +125,7 @@ export default function Garantia() {
                   3.1 Processo de Solicitação:
                 </h3>
                 <ol className="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-                  <li>Entre em contato conosco via e-mail: contato@tecnoartho.com</li>
+                  <li>Entre em contato conosco via e-mail: contato@anti-flacidez.com</li>
                   <li>Informe o número do seu pedido e data de compra</li>
                   <li>Descreva detalhadamente o problema ou defeito encontrado</li>
                   <li>Receberá instruções para envio do produto para análise</li>
@@ -194,7 +204,7 @@ export default function Garantia() {
                   Durante o período de garantia, oferecemos suporte técnico completo para ajudar você a obter os melhores resultados com o Antiflacidez Massageador L&L SKIN. Nossa equipe está disponível para esclarecer dúvidas e orientar sobre o uso correto do produto.
                 </p>
                 <p className="text-gray-700 mt-2">
-                  <strong>Contato:</strong> contato@tecnoartho.com
+                  <strong>Contato:</strong> contato@anti-flacidez.com
                 </p>
               </section>
 
@@ -229,7 +239,7 @@ export default function Garantia() {
                 </p>
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <p className="text-gray-700 mb-2">
-                    <strong>E-mail:</strong> contato@tecnoartho.com
+                    <strong>E-mail:</strong> contato@anti-flacidez.com
                   </p>
                   <p className="text-gray-700 mb-2">
                     <strong>Assunto:</strong> Solicitação de Garantia
