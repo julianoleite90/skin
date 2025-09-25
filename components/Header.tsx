@@ -1,10 +1,6 @@
 "use client"
 
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
-
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -35,42 +31,25 @@ export default function Header() {
                 Preços
               </a>
             </nav>
-            <button className="bg-gray-400 hover:bg-gray-500 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 text-sm">
+            <button 
+              onClick={() => window.location.href = '/rastreio'}
+              className="bg-gray-400 hover:bg-gray-500 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 text-sm"
+            >
               Rastrear Pedido
             </button>
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile CTA */}
+          <div className="md:hidden pr-4">
+            <button 
+              onClick={() => window.location.href = '/rastreio'}
+              className="bg-gray-400 hover:bg-gray-500 text-white font-medium py-1.5 px-3 rounded-lg transition-all duration-300 text-xs"
+            >
+              Rastrear Pedido
+            </button>
+          </div>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
-            <nav className="flex flex-col space-y-4">
-              <a href="#produto" className="text-gray-700 hover:text-primary-600 transition-colors">
-                Produto
-              </a>
-              <a href="#beneficios" className="text-gray-700 hover:text-primary-600 transition-colors">
-                Benefícios
-              </a>
-              <a href="#depoimentos" className="text-gray-700 hover:text-primary-600 transition-colors">
-                Depoimentos
-              </a>
-              <a href="#precos" className="text-gray-700 hover:text-primary-600 transition-colors">
-                Preços
-              </a>
-              <button className="bg-gray-400 hover:bg-gray-500 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 text-sm w-full mt-4">
-                Rastrear Pedido
-              </button>
-            </nav>
-          </div>
-        )}
       </div>
     </header>
   )

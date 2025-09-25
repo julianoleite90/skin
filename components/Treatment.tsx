@@ -17,7 +17,7 @@ export default function Treatment() {
     setShowPopup(false)
     // Aguardar um pouco e redirecionar
     setTimeout(() => {
-      window.location.href = 'https://full.sale/nQSHAk'
+      window.location.href = 'https://full.sale/nQSHAk?src=rmkt-google'
     }, 100)
   }
   return (

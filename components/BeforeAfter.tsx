@@ -56,10 +56,12 @@ export default function BeforeAfter() {
   }, [isDragging])
 
   return (
-    <section className="section-padding bg-white relative">
+    <section className="py-8 md:py-16 px-4 sm:px-6 lg:px-8 bg-white relative">
+      {/* Linha de separação com gradiente prateado */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
       <div className="container-custom">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-4 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Pele Renovada
           </h2>
