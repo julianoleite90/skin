@@ -21,8 +21,8 @@ export default function Hero() {
           {/* Left Column - Content */}
           <div className="space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-gray-300 via-gray-400 to-gray-500 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium shadow-lg">
-              <Droplets className="w-3 h-3 md:w-4 md:h-4 text-white" />
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 text-gray-700 px-3 py-0.5 md:px-4 md:py-1 rounded-lg text-xs md:text-sm font-medium shadow-sm">
+              <Droplets className="w-3 h-3 md:w-4 md:h-4 text-gray-600" />
               <span>Lifting diário</span>
             </div>
 

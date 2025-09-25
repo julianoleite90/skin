@@ -29,7 +29,7 @@ export default function Treatment() {
           Escolha o melhor tratamento para flacidez facial
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Transforme sua pele com o tratamento 6 em 1 mais escolhido
+          Rejuveneça sua pele e transforme sua autoestima
         </p>
         </div>
 
