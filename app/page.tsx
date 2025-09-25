@@ -42,7 +42,7 @@ const productSchema = {
   "category": "Beleza e Estética",
   "offers": {
     "@type": "Offer",
-    "price": "108.33",
+    "price": "88.25",
     "priceCurrency": "BRL",
     "priceValidUntil": "2025-12-31",
     "availability": "https://schema.org/InStock",
