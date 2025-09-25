@@ -54,7 +54,7 @@ export default function RastreioPage() {
     });
   };
 
-  const formatarData = (data) => {
+  const formatarData = (data: string) => {
     return new Date(data).toLocaleDateString('pt-BR', {
       day: '2-digit',
       month: '2-digit',
@@ -62,7 +62,7 @@ export default function RastreioPage() {
     });
   };
 
-  const mascararCPF = (cpf) => {
+  const mascararCPF = (cpf: string) => {
     if (!cpf) return '';
     const cpfLimpo = cpf.replace(/\D/g, '');
     if (cpfLimpo.length !== 11) return cpf;
@@ -72,7 +72,7 @@ export default function RastreioPage() {
     return `${parteVisivel}${parteOculta}`;
   };
 
-  const calcularDataStatus = (dataPedido, diasAdicionais) => {
+  const calcularDataStatus = (dataPedido: string, diasAdicionais: number) => {
     const data = new Date(dataPedido);
     data.setDate(data.getDate() + diasAdicionais);
     return formatarData(data);
