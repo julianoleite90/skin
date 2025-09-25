@@ -75,8 +75,7 @@ export default function Testimonials() {
       title: "Cold mode", 
       items: [
         "Flacidez facial",
-        "Inchaço",
-        "Rugas"
+        "Inchaço"
       ],
       color: "bg-gray-700"
     }
@@ -126,143 +125,24 @@ export default function Testimonials() {
         </div>
 
         {/* Single Image with Both Modes */}
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-8 mb-0 items-end mt-4 md:mt-0">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-8 mb-0 items-start mt-4 md:mt-0">
           {/* Left Column - Both Modes */}
-          <div className="flex flex-col justify-center space-y-6 order-2 md:order-2">
+          <div className="flex flex-col space-y-6 order-2 md:order-2">
             {/* Title and Subtitle */}
-            <div className="mb-4 -mt-6 mt-4 md:mt-0">
+            <div className="mb-4 -mt-6 mt-4 md:mt-24">
               <h2 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
                 Reestrutura a matriz dérmica
               </h2>
               <p className="text-xl text-gray-600">
                 Essa ação direcionada reestrutura a matriz dérmica, combatendo a flacidez de forma eficaz e proporcionando uma pele visivelmente mais firme e elástica em poucas semanas, com resultados comparáveis a tratamentos estéticos profissionais, mas no conforto de casa.
               </p>
+              
+              <p className="text-xl text-gray-600 mt-4">
+                Com apenas 15 minutos por dia, você pode cuidar da sua pele e conquistar uma aparência mais firme, com menos rugas e linhas de expressão
+              </p>
             </div>
 
-            {/* Mobile Slider - Hot and Cold modes */}
-            <div className="md:hidden">
-              <div 
-                ref={sliderRef}
-                className="relative overflow-hidden rounded-lg bg-white shadow-lg"
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
-                onTouchEnd={handleTouchEnd}
-              >
-                <div className="w-4/5 mx-auto p-4">
-                  <div className="grid grid-cols-3 gap-4">
-                    {/* Hot Mode */}
-                    <div className="col-span-2 -ml-12">
-                      <h3 className="text-lg font-bold text-gray-900 mb-2 text-left">
-                        <span className="text-red-500">●</span> Hot mode
-                      </h3>
-                      <p className="text-xs text-gray-500 mb-3 text-left">
-                        Eficaz para:
-                      </p>
-                      
-                      <div className="space-y-2">
-                        {slides[0].items.map((item, itemIndex) => (
-                          <div key={itemIndex} className="flex items-center space-x-2">
-                            <img 
-                              src={`/images/${9 + itemIndex}.png`}
-                              alt={`Depoimento ${9 + itemIndex}`}
-                              className="w-14 h-14 object-cover rounded-full flex-shrink-0"
-                            />
-                            <span className="text-xs text-gray-700 font-medium flex-1 min-w-0">{item}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
 
-                    {/* Cold Mode */}
-                    <div className="ml-12 justify-self-end">
-                      <h3 className="text-lg font-bold text-gray-900 mb-2 text-left whitespace-nowrap">
-                        <span className="text-gray-700">●</span> Cold mode
-                      </h3>
-                      <p className="text-xs text-gray-500 mb-3 text-left">
-                        Eficaz para:
-                      </p>
-                      
-                      <div className="space-y-2">
-                        {slides[1].items.map((item, itemIndex) => {
-                          const imageMap = [12, 13, 9]; // 12.png, 13.png, 9.png
-                          return (
-                            <div key={itemIndex} className="flex items-center space-x-2">
-                              <img 
-                                src={`/images/${imageMap[itemIndex]}.png`}
-                                alt={`Depoimento ${imageMap[itemIndex]}`}
-                                className="w-14 h-14 object-cover rounded-full flex-shrink-0"
-                              />
-                              <span className="text-xs text-gray-700 font-medium flex-1 min-w-0">{item}</span>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Desktop - Hot and Cold modes stacked */}
-            <div className="hidden md:block">
-              {/* Hot mode */}
-              <div>
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
-                  Hot mode
-                </h3>
-                <div className="space-y-2">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span className="text-lg text-gray-700">Flacidez facial</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span className="text-lg text-gray-700">Inchaço</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span className="text-lg text-gray-700">Bolsas nos olhos</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Cold mode */}
-              <div className="mt-4">
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
-                  Cold mode
-                </h3>
-                <div className="space-y-2">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-5 h-5 bg-gray-700 rounded-full flex items-center justify-center">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span className="text-lg text-gray-700">Linhas de expressão</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-5 h-5 bg-gray-700 rounded-full flex items-center justify-center">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span className="text-lg text-gray-700">Bigode chinês</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right Column - Image */}
