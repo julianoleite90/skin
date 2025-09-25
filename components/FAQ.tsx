@@ -45,6 +45,11 @@ export default function FAQ() {
       id: 8,
       question: "Posso usar cremes ou séruns junto com o massageador?",
       answer: "Sim, você pode usar o massageador junto com seus cremes e séruns habituais. Na verdade, isso pode potencializar os resultados, pois o massageador ajuda na penetração dos ativos dos produtos de skincare."
+    },
+    {
+      id: 9,
+      question: "Qual o prazo de entrega?",
+      answer: "As entregas são realizadas via correios, e o prazo é entre 20 a 22 dias."
     }
   ]
 

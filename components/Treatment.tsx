@@ -60,16 +60,13 @@ export default function Treatment() {
             <div className="text-center md:text-left">
               <div className="mb-2">
                 <span className="text-xl text-gray-500 line-through">
-                  DE: R$ 1.759,00
+                  DE: R$ 2.147,00
                 </span>
               </div>
               <div className="mb-4">
-                <span className="text-3xl md:text-4xl font-bold text-gray-900">
-                  POR: 12x de R$ 98,85
+                <span className="text-2xl md:text-3xl font-bold text-gray-900">
+                  POR: 12x de R$ 108,33
                 </span>
-              </div>
-              <div className="text-sm text-gray-600">
-                ou R$ 979,00 no PIX.
               </div>
             </div>
 

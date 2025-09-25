@@ -19,7 +19,7 @@ export const googleMerchantSchema = {
   "gtin": "7891234567890",
   "offers": {
     "@type": "Offer",
-    "price": "98.85",
+    "price": "108.33",
     "priceCurrency": "BRL",
     "priceValidUntil": "2025-12-31",
     "availability": "https://schema.org/InStock",
