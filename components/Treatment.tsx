@@ -68,6 +68,10 @@ export default function Treatment() {
                   POR: 12x de R$ 108,33
                 </span>
               </div>
+              <div className="mb-4 text-sm text-gray-600">
+                <div>1 Und Antiflacidez massageador</div>
+                <div>3 Und Sérum facial</div>
+              </div>
             </div>
 
             {/* CTA Button */}
