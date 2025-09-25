@@ -64,7 +64,7 @@ export default function Treatment() {
                 </span>
               </div>
               <div className="mb-4">
-                <span className="text-2xl md:text-3xl font-bold text-gray-900">
+                <span className="text-xl md:text-2xl font-bold text-gray-900">
                   POR: 12x de R$ 108,33
                 </span>
               </div>
