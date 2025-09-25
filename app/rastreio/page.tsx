@@ -15,7 +15,7 @@ export default function RastreioPage() {
   const [resultado, setResultado] = useState(null);
   const [erro, setErro] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setErro('');
 
