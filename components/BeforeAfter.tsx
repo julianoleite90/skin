@@ -86,14 +86,17 @@ export default function BeforeAfter() {
 
             {/* CTA */}
             <div className="text-center md:text-left pt-4">
-              <a 
-                href="https://full.sale/nQSHAk"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button 
+                onClick={() => {
+                  const kitsSection = document.getElementById('kits');
+                  if (kitsSection) {
+                    kitsSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="w-full md:w-auto bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 hover:from-amber-500 hover:via-yellow-600 hover:to-amber-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg inline-block text-center"
               >
                 QUERO MINHA TRANSFORMAÇÃO
-              </a>
+              </button>
             </div>
           </div>
 

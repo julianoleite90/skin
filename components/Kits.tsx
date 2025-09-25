@@ -2,7 +2,7 @@
 
 export default function Kits() {
   return (
-    <section className="section-padding bg-white relative">
+    <section id="kits" className="section-padding bg-white relative">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
