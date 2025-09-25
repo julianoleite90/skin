@@ -1,4 +1,7 @@
+"use client"
+
 import { Star, Quote } from 'lucide-react'
+import { useState, useRef, useEffect } from 'react'
 
 const testimonials = [
   {
@@ -52,6 +55,63 @@ const testimonials = [
 ]
 
 export default function Testimonials() {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [isDragging, setIsDragging] = useState(false)
+  const [startX, setStartX] = useState(0)
+  const [currentX, setCurrentX] = useState(0)
+  const sliderRef = useRef<HTMLDivElement>(null)
+
+  const slides = [
+    {
+      title: "Hot mode",
+      items: [
+        "Linhas de expressão",
+        "Bolsas nos olhos", 
+        "Bigode chinês"
+      ],
+      color: "bg-yellow-500"
+    },
+    {
+      title: "Cold mode", 
+      items: [
+        "Flacidez facial",
+        "Inchaço",
+        "Rugas"
+      ],
+      color: "bg-gray-700"
+    }
+  ]
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setIsDragging(true)
+    setStartX(e.touches[0].clientX)
+    setCurrentX(e.touches[0].clientX)
+  }
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isDragging) return
+    setCurrentX(e.touches[0].clientX)
+  }
+
+  const handleTouchEnd = () => {
+    if (!isDragging) return
+    
+    const diff = startX - currentX
+    const threshold = 50
+
+    if (Math.abs(diff) > threshold) {
+      if (diff > 0) {
+        // Swipe left - next slide
+        setCurrentSlide((prev) => (prev + 1) % slides.length)
+      } else {
+        // Swipe right - previous slide
+        setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+      }
+    }
+
+    setIsDragging(false)
+  }
+
   return (
     <section id="testimonials" className="section-padding bg-gray-50">
       <div className="container-custom">
@@ -74,76 +134,131 @@ export default function Testimonials() {
               <h2 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
                 Reestrutura a matriz dérmica
               </h2>
-              <p className="text-sm md:text-base text-gray-600">
+              <p className="text-xl text-gray-600">
                 Essa ação direcionada reestrutura a matriz dérmica, combatendo a flacidez de forma eficaz e proporcionando uma pele visivelmente mais firme e elástica em poucas semanas, com resultados comparáveis a tratamentos estéticos profissionais, mas no conforto de casa.
               </p>
             </div>
 
-            {/* Hot and Cold modes - Mobile side by side, Desktop stacked */}
-            <div className="grid grid-cols-2 md:block gap-4 md:gap-0">
+            {/* Mobile Slider - Hot and Cold modes */}
+            <div className="md:hidden">
+              <div 
+                ref={sliderRef}
+                className="relative overflow-hidden rounded-lg bg-white shadow-lg"
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+              >
+                <div className="w-4/5 mx-auto p-4">
+                  <div className="grid grid-cols-3 gap-4">
+                    {/* Hot Mode */}
+                    <div className="col-span-2 -ml-12">
+                      <h3 className="text-lg font-bold text-gray-900 mb-2 text-left">
+                        <span className="text-red-500">●</span> Hot mode
+                      </h3>
+                      <p className="text-xs text-gray-500 mb-3 text-left">
+                        Eficaz para:
+                      </p>
+                      
+                      <div className="space-y-2">
+                        {slides[0].items.map((item, itemIndex) => (
+                          <div key={itemIndex} className="flex items-center space-x-2">
+                            <img 
+                              src={`/images/${9 + itemIndex}.png`}
+                              alt={`Depoimento ${9 + itemIndex}`}
+                              className="w-14 h-14 object-cover rounded-full flex-shrink-0"
+                            />
+                            <span className="text-xs text-gray-700 font-medium flex-1 min-w-0">{item}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Cold Mode */}
+                    <div className="ml-12 justify-self-end">
+                      <h3 className="text-lg font-bold text-gray-900 mb-2 text-left whitespace-nowrap">
+                        <span className="text-gray-700">●</span> Cold mode
+                      </h3>
+                      <p className="text-xs text-gray-500 mb-3 text-left">
+                        Eficaz para:
+                      </p>
+                      
+                      <div className="space-y-2">
+                        {slides[1].items.map((item, itemIndex) => {
+                          const imageMap = [12, 13, 9]; // 12.png, 13.png, 9.png
+                          return (
+                            <div key={itemIndex} className="flex items-center space-x-2">
+                              <img 
+                                src={`/images/${imageMap[itemIndex]}.png`}
+                                alt={`Depoimento ${imageMap[itemIndex]}`}
+                                className="w-14 h-14 object-cover rounded-full flex-shrink-0"
+                              />
+                              <span className="text-xs text-gray-700 font-medium flex-1 min-w-0">{item}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Desktop - Hot and Cold modes stacked */}
+            <div className="hidden md:block">
               {/* Hot mode */}
               <div>
-                <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 mb-2 md:mb-3">
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
                   Hot mode
                 </h3>
-                <div className="space-y-1 md:space-y-2">
-                  <div className="flex items-center space-x-2 md:space-x-3">
-                    <div className="w-4 h-4 md:w-5 md:h-5 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center">
-                      <svg className="w-2 h-2 md:w-3 md:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-sm md:text-lg text-gray-700">Flacidez facial</span>
+                    <span className="text-lg text-gray-700">Flacidez facial</span>
                   </div>
-                  <div className="flex items-center space-x-2 md:space-x-3">
-                    <div className="w-4 h-4 md:w-5 md:h-5 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center">
-                      <svg className="w-2 h-2 md:w-3 md:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-sm md:text-lg text-gray-700">Inchaço</span>
+                    <span className="text-lg text-gray-700">Inchaço</span>
                   </div>
-                  <div className="flex items-center space-x-2 md:space-x-3">
-                    <div className="w-4 h-4 md:w-5 md:h-5 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center">
-                      <svg className="w-2 h-2 md:w-3 md:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-sm md:text-lg text-gray-700">Bolsas nos olhos</span>
+                    <span className="text-lg text-gray-700">Bolsas nos olhos</span>
                   </div>
                 </div>
               </div>
 
               {/* Cold mode */}
-              <div className="md:mt-4">
-                <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 mb-2 md:mb-3">
+              <div className="mt-4">
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
                   Cold mode
                 </h3>
-                <div className="space-y-1 md:space-y-2">
-                  <div className="flex items-center space-x-2 md:space-x-3">
-                    <div className="w-4 h-4 md:w-5 md:h-5 bg-slate-500 rounded-full flex items-center justify-center">
-                      <svg className="w-2 h-2 md:w-3 md:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-5 h-5 bg-gray-700 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-sm md:text-lg text-gray-700">Linhas de expressão</span>
+                    <span className="text-lg text-gray-700">Linhas de expressão</span>
                   </div>
-                  <div className="flex items-center space-x-2 md:space-x-3">
-                    <div className="w-4 h-4 md:w-5 md:h-5 bg-slate-500 rounded-full flex items-center justify-center">
-                      <svg className="w-2 h-2 md:w-3 md:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-5 h-5 bg-gray-700 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-sm md:text-lg text-gray-700">Bigode chinês</span>
-                  </div>
-                  {/* Mobile only - Rugas profundas */}
-                  <div className="flex items-center space-x-2 md:hidden">
-                    <div className="w-4 h-4 bg-blue-600 rounded-full flex items-center justify-center">
-                      <svg className="w-2 h-2 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span className="text-sm text-gray-700">Rugas profundas</span>
+                    <span className="text-lg text-gray-700">Bigode chinês</span>
                   </div>
                 </div>
               </div>
