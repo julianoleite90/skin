@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from 'react';
 import { Search, Package, Truck, Clock, CheckCircle, MapPin, Calendar } from 'lucide-react';
 import Header from '@/components/Header';
