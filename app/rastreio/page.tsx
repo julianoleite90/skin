@@ -12,7 +12,12 @@ export default function RastreioPage() {
     cpf: '',
     dataPedido: ''
   });
-  const [resultado, setResultado] = useState(null);
+  const [resultado, setResultado] = useState<{
+    nome: string;
+    cpf: string;
+    dataPedido: string;
+    numeroPedido: string;
+  } | null>(null);
   const [erro, setErro] = useState('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
