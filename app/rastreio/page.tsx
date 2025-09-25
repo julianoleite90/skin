@@ -5,22 +5,6 @@ import { Search, Package, Truck, Clock, CheckCircle, MapPin, Calendar } from 'lu
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import JsonLd from '@/components/JsonLd';
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Rastrear Pedido - Antiflacidez L&L Skin | Acompanhe sua Compra',
-  description: 'Rastreie seu pedido do Antiflacidez L&L Skin. Acompanhe o status da entrega em tempo real.',
-  keywords: 'rastrear pedido, acompanhar compra, status entrega, rastreamento antiflacidez, L&L Skin, localizar pedido',
-  openGraph: {
-    title: 'Rastrear Pedido - Antiflacidez L&L Skin',
-    description: 'Rastreie seu pedido do Antiflacidez L&L Skin. Acompanhe o status da entrega.',
-    url: 'https://anti-flacidez.com/rastreio',
-    images: ['/images/og-rastreio.jpg'],
-  },
-  alternates: {
-    canonical: '/rastreio',
-  },
-}
 
 export default function RastreioPage() {
   const [formData, setFormData] = useState({
