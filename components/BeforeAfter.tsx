@@ -67,7 +67,7 @@ export default function BeforeAfter() {
             Pele Renovada
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Veja a transformação incrível que o kit antiflacidez L&L Skin pode fazer na sua pele em apenas algumas semanas
+            Efeito lifting que rejuvenesce e restaura a elasticidade da pele com resultados visíveis.
           </p>
         </div>
 
@@ -80,10 +80,10 @@ export default function BeforeAfter() {
                 Transformação Visível
               </h3>
               <p className="text-lg text-gray-600 mb-6">
-                Nossas clientes relatam resultados impressionantes já nas primeiras semanas de uso. A tecnologia hot/cold mode estimula a produção natural de colágeno, resultando em uma pele mais firme, tonificada e rejuvenescida.
+                L Skin Derm estimula a produção de colágeno na pele por meio da massagem com microcorrentes, promovendo firmeza e um rejuvenescimento visível e instantâneo.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Arraste o controle para ver a diferença entre o antes e depois. Os resultados são surpreendentes!
+                Firmeza e juventude sem cirurgia!
               </p>
             </div>
 
@@ -96,9 +96,9 @@ export default function BeforeAfter() {
                     kitsSection.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="w-full md:w-auto bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 hover:from-amber-500 hover:via-yellow-600 hover:to-amber-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg inline-block text-center"
+                className="w-full md:w-auto bg-gradient-to-r from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg inline-block text-center"
               >
-                QUERO MINHA TRANSFORMAÇÃO
+                EU QUERO A PELE MAIS FIRME
               </button>
             </div>
           </div>

@@ -6,11 +6,10 @@ export default function Features() {
         {/* Header */}
         <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          O seu lifiting diário. Veja o resultados de alguns clientes
+          O seu lifiting diário. Resultados que transformam a autoestima
         </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Recebemos muitos depoimentos de mulheres que transformaram sua pele com o kit antiflacidez. 
-            Veja os depoimentos fotos reais de quem já experimentou.
+            Recebemos depoimentos como esses diariamente. Fotos de mulheres que transformaram sua pele e resgataram a sua autoestima com o L Skin Derm.
           </p>
         </div>
 

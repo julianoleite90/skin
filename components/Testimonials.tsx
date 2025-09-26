@@ -120,7 +120,7 @@ export default function Testimonials() {
             Recomendado por especialistas em dermatologia
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Especialistas recomendam por sua capacidade de estimular a produção de colágeno em até 30%.
+            Especialistas recomendam L Skin Derm por sua capacidade de estimular a produção de colágeno em até 30%.
           </p>
         </div>
 
@@ -131,14 +131,14 @@ export default function Testimonials() {
             {/* Title and Subtitle */}
             <div className="mb-4 -mt-6 mt-4 md:mt-24">
               <h2 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
-                Reestrutura a matriz dérmica
+                Um boost de colágeno diretamente na pele
               </h2>
               <p className="text-xl text-gray-600">
-                Essa ação direcionada reestrutura a matriz dérmica, combatendo a flacidez de forma eficaz e proporcionando uma pele visivelmente mais firme e elástica em poucas semanas, com resultados comparáveis a tratamentos estéticos profissionais, mas no conforto de casa.
+                L Skin Derm estimula até 30% mais colágeno na pele por meio da massagem com microcorrentes, promovendo firmeza e rejuvenescimento visível.
               </p>
               
               <p className="text-xl text-gray-600 mt-4">
-                Com apenas 15 minutos por dia, você pode cuidar da sua pele e conquistar uma aparência mais firme, com menos rugas e linhas de expressão
+                O sérum anti-idade, enriquecido com retinol, atua profundamente, renovando a pele, reduzindo rugas e melhorando a textura.
               </p>
             </div>
 

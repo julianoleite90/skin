@@ -10,7 +10,7 @@ export default function Guarantee() {
             Garantia total blindada
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Proteção completa por 180 dias, use tranquilamente o seu Antiflacidez
+            Proteção completa por 180 dias, use tranquilamente o seu L Skin Derm
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export default function Guarantee() {
                     pricingSection.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="w-full md:w-auto bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 hover:from-amber-500 hover:via-yellow-600 hover:to-amber-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg inline-block text-center"
+                className="w-full md:w-auto bg-gradient-to-r from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg inline-block text-center"
               >
                 GARANTIR MEU PEDIDO
               </button>

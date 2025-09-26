@@ -29,7 +29,7 @@ export default function Treatment() {
           Escolha o melhor tratamento para flacidez facial
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Rejuveneça sua pele e transforme sua autoestima
+          Rejuveneça sua pele e transforme sua autoestima com L Skin Derm
         </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function Treatment() {
             {/* Title and Subtitle */}
             <div className="text-center md:text-left">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                Tratamento antiflacidez L&L Skin
+                Tratamento antiflacidez L Skin Derm
               </h3>
               <p className="text-lg text-gray-600">
                 Tratamento eficaz para flacidez facial, bolsas, linhas de expressão e rugas.
@@ -69,8 +69,8 @@ export default function Treatment() {
                 </span>
               </div>
               <div className="mb-4 text-sm text-gray-600">
-                <div>1 Und Antiflacidez massageador</div>
-                <div>3 Und Sérum facial</div>
+                <div>1 Und Massageador Anti-flacidez L Skin Derm</div>
+                <div>3 Und Sérum facial Anti-Idade L Skin Derm</div>
               </div>
             </div>
 
@@ -78,7 +78,7 @@ export default function Treatment() {
             <div className="text-center md:text-left">
               <button 
                 onClick={handleBuyClick}
-                className="w-full md:w-auto bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 hover:from-amber-500 hover:via-yellow-600 hover:to-amber-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg"
+                className="w-full md:w-auto bg-gradient-to-r from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg"
               >
                 COMPRAR AGORA
               </button>

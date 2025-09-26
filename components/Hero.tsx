@@ -20,11 +20,6 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="space-y-8">
-            {/* Badge */}
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 text-gray-700 px-3 py-0.5 md:px-4 md:py-1 rounded-lg text-xs md:text-sm font-medium shadow-sm">
-              <Droplets className="w-3 h-3 md:w-4 md:h-4 text-gray-600" />
-              <span>Lifting diário</span>
-            </div>
 
             {/* Mobile Product Gallery - Only visible on mobile */}
             <div className="lg:hidden">
@@ -42,13 +37,13 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              <span className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">Transforme sua pele:</span><br />
+              <span className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">Rejuvenesça sua pele:</span><br />
               Firmeza e juventude sem cirurgia!
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl text-gray-600 leading-relaxed pt-2 md:pt-8 lg:pt-8">
-              Rejuvenesça sua pele com o poder do kit antiflacidez. Diga adeus à flacidez, rugas e linhas de expressão em apenas 15 minutos por dia para uma aparência jovem e vibrante.
+              Cansada de olhar no espelho e ver rugas ou flacidez? Com apenas 15 minutos por dia, você pode recuperar a pele jovem e a confiança que merece.
             </p>
 
 
@@ -61,9 +56,9 @@ export default function Hero() {
                             testimonialsSection.scrollIntoView({ behavior: 'smooth' });
                           }
                         }}
-                        className="bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 hover:from-amber-500 hover:via-yellow-600 hover:to-amber-700 text-white font-semibold py-4 px-20 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
+                        className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white font-semibold py-4 px-20 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
                       >
-                        Ver Depoimentos
+                        COMPRAR AGORA
                       </button>
                     </div>
 
