@@ -39,6 +39,11 @@ const videos = [
     id: 'video8',
     title: 'Depoimento 8',
     vimeoId: '1121648339'
+  },
+  {
+    id: 'video9',
+    title: 'Depoimento 9',
+    vimeoId: '1122270701'
   }
 ]
 
