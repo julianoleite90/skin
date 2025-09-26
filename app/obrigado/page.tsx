@@ -140,7 +140,7 @@ export default function ObrigadoPage() {
               Nossa equipe está pronta para te ajudar com qualquer dúvida sobre seu pedido.
             </p>
             <div className="space-y-2 text-sm text-gray-600">
-              <p>📧 contato@tecnoartho.com</p>
+              <p>📧 contato@lskinderm.com</p>
               <p>📱 (41) 98454-9172</p>
             </div>
           </div>
