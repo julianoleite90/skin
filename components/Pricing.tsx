@@ -1,3 +1,7 @@
+"use client"
+
+import { useState, useEffect } from 'react'
+
 // Array de vídeos do Vimeo - organizados para evitar repetições consecutivas
 const videos = [
   {
@@ -123,6 +127,37 @@ const videos = [
 ]
 
 export default function Pricing() {
+  const [visibleVideos, setVisibleVideos] = useState(8) // Começa com apenas 8 vídeos
+  const [isIntersecting, setIsIntersecting] = useState(false)
+
+  useEffect(() => {
+    // Carrega mais vídeos gradualmente
+    const timer = setInterval(() => {
+      setVisibleVideos(prev => Math.min(prev + 4, videos.length * 3))
+    }, 1000)
+
+    return () => clearInterval(timer)
+  }, [])
+
+  useEffect(() => {
+    // Intersection Observer para carregar vídeos quando a seção estiver visível
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsIntersecting(true)
+        }
+      },
+      { threshold: 0.1 }
+    )
+
+    const section = document.getElementById('precos')
+    if (section) {
+      observer.observe(section)
+    }
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <section id="precos" className="section-padding bg-white relative">
       <div className="container-custom">
@@ -140,18 +175,28 @@ export default function Pricing() {
         <div className="mb-16">
           <div className="overflow-hidden -mx-4 sm:-mx-6 lg:-mx-8">
             <div className="flex animate-scroll">
-              {/* Triple videos for seamless loop - ensures no empty spaces */}
-              {[...videos, ...videos, ...videos].map((video, index) => (
+              {/* Carregamento progressivo de vídeos */}
+              {[...videos, ...videos, ...videos].slice(0, visibleVideos).map((video, index) => (
                 <div key={`${video.id}-${index}`} className="flex-shrink-0 w-32 h-56 sm:w-40 sm:h-72 mx-2">
                   <div className="w-full h-full bg-gray-200 rounded-lg overflow-hidden">
-                    <iframe
-                      src={`https://player.vimeo.com/video/${video.vimeoId}?autoplay=1&loop=1&muted=1&controls=0&background=1`}
-                      className="w-full h-full"
-                      frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      allowFullScreen
-                      title={video.title}
-                    ></iframe>
+                    {isIntersecting ? (
+                      <iframe
+                        src={`https://player.vimeo.com/video/${video.vimeoId}?autoplay=1&loop=1&muted=1&controls=0&background=1&autopause=0&playsinline=1&byline=0&title=0&portrait=0`}
+                        className="w-full h-full"
+                        frameBorder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowFullScreen
+                        title={video.title}
+                        loading="lazy"
+                      ></iframe>
+                    ) : (
+                      <div className="w-full h-full bg-gray-300 rounded-lg flex items-center justify-center">
+                        <div className="text-center text-gray-500">
+                          <div className="w-6 h-6 mx-auto mb-1 bg-gray-400 rounded-full animate-pulse"></div>
+                          <p className="text-xs">Carregando...</p>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}

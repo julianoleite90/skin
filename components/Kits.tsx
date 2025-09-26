@@ -20,7 +20,7 @@ export default function Kits() {
             <div className="flex justify-center mb-6 md:hidden">
               <div className="w-full max-w-md aspect-video">
                 <iframe
-                  src="https://player.vimeo.com/video/1122343689?autoplay=1&loop=1&muted=1&controls=0&background=1"
+                  src="https://player.vimeo.com/video/1122343689?autoplay=1&loop=1&muted=1&controls=0&background=1&autopause=0&playsinline=1"
                   className="w-full h-full rounded-lg"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
@@ -126,7 +126,7 @@ export default function Kits() {
           <div className="hidden md:flex justify-center order-2">
             <div className="w-full max-w-2xl aspect-video">
               <iframe
-                src="https://player.vimeo.com/video/1122343689?autoplay=1&loop=1&muted=1&controls=0&background=1"
+                src="https://player.vimeo.com/video/1122343689?autoplay=1&loop=1&muted=1&controls=0&background=1&autopause=0&playsinline=1"
                 className="w-full h-full rounded-lg"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
