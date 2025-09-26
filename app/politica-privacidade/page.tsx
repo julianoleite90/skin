@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Política de Privacidade - L Skin Derm Anti-flacidez',
     description: 'Política de privacidade do L Skin Derm Anti-flacidez. Conheça como protegemos seus dados pessoais.',
-    url: 'https://anti-flacidez.com/politica-privacidade',
+    url: 'https://lskinderm.com/politica-privacidade',
     images: ['/images/og-privacidade.jpg'],
   },
   alternates: {

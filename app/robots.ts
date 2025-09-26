@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/private/', '/admin/'],
     },
-    sitemap: 'https://anti-flacidez.com/sitemap.xml',
+    sitemap: 'https://lskinderm.com/sitemap.xml',
   }
 }
 

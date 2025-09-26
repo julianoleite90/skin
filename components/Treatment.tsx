@@ -49,7 +49,7 @@ export default function Treatment() {
             {/* Title and Subtitle */}
             <div className="text-center md:text-left">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                Tratamento antiflacidez L Skin Derm
+                Tratamento L Skin Derm Antiflacidez
               </h3>
               <p className="text-lg text-gray-600">
                 Tratamento eficaz para flacidez facial, bolsas, linhas de expressão e rugas.
@@ -62,10 +62,15 @@ export default function Treatment() {
                 <span className="text-xl text-gray-500 line-through">
                   DE: R$ 1.758,00
                 </span>
+                <div className="mt-1">
+                  <span className="text-2xl font-bold text-green-600">
+                    POR: R$ 879,00
+                  </span>
+                </div>
               </div>
               <div className="mb-4">
-                <span className="text-xl md:text-2xl font-bold text-gray-900">
-                  POR: 12x de R$ 88,25
+                <span className="text-xl md:text-2xl font-bold italic text-gray-900">
+                  OU 12X DE R$89,00
                 </span>
               </div>
               <div className="mb-4 text-sm text-gray-600">

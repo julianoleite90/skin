@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://anti-flacidez.com'),
+  metadataBase: new URL('https://lskinderm.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'L Skin Derm - Anti-flacidez facial',
     description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias.',
-    url: 'https://anti-flacidez.com',
+    url: 'https://lskinderm.com',
     siteName: 'L Skin Derm Anti-flacidez',
     images: [
       {

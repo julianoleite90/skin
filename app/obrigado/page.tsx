@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Compra Realizada - L Skin Derm Anti-flacidez',
     description: 'Compra realizada com sucesso! Acompanhe os próximos passos do seu pedido.',
-    url: 'https://anti-flacidez.com/obrigado',
+    url: 'https://lskinderm.com/obrigado',
     images: ['/images/og-obrigado.jpg'],
   },
   alternates: {

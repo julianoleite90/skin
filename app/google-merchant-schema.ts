@@ -5,9 +5,9 @@ export const googleMerchantSchema = {
   "name": "Antiflacidez Facial L&L Skin",
   "description": "Massageador facial com tecnologia hot/cold mode para combater flacidez, rugas e linhas de expressão. Resultados em 15 minutos por dia.",
   "image": [
-    "https://anti-flacidez.com/images/2-min.png",
-    "https://anti-flacidez.com/images/hot.png",
-    "https://anti-flacidez.com/images/atuando.png"
+    "https://lskinderm.com/images/2-min.png",
+    "https://lskinderm.com/images/hot.png",
+    "https://lskinderm.com/images/atuando.png"
   ],
   "brand": {
     "@type": "Brand",
@@ -27,7 +27,7 @@ export const googleMerchantSchema = {
     "seller": {
       "@type": "Organization",
       "name": "L&L Skin",
-      "url": "https://anti-flacidez.com"
+      "url": "https://lskinderm.com"
     },
     "shippingDetails": {
       "@type": "OfferShippingDetails",

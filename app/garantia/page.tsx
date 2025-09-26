@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Garantia de 180 Dias - L Skin Derm Anti-flacidez',
     description: 'Garantia de 180 dias para o L Skin Derm Anti-flacidez. Proteção completa contra defeitos e falhas.',
-    url: 'https://anti-flacidez.com/garantia',
+    url: 'https://lskinderm.com/garantia',
     images: ['/images/og-garantia.jpg'],
   },
   alternates: {
@@ -74,7 +74,7 @@ export default function Garantia() {
                   1. Garantia contra Defeitos e Falhas
                 </h2>
                 <p className="text-gray-700 mb-4">
-                  Oferecemos uma garantia de 180 dias contra defeitos ou falhas no Antiflacidez Massageador L&L SKIN. Caso ocorra qualquer problema técnico ou de fabricação, enviaremos um produto novo totalmente grátis, sem complicações ou burocracias.
+                  Oferecemos uma garantia de 180 dias contra defeitos ou falhas no Massageador Antiflacidez L&L SKIN. Caso ocorra qualquer problema técnico ou de fabricação, enviaremos um produto novo totalmente grátis, sem complicações ou burocracias.
                 </p>
                 <p className="text-gray-700">
                   Estamos tão confiantes na qualidade e durabilidade do nosso produto que assumimos todo o risco. Você tem 180 dias para usar com tranquilidade e comprovar a excelência do Antiflacidez Massageador L&L SKIN.

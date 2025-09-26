@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Política de Devolução - L Skin Derm Anti-flacidez',
     description: 'Política de devolução do L Skin Derm Anti-flacidez. Direito de arrependimento em 7 dias.',
-    url: 'https://anti-flacidez.com/devolucao',
+    url: 'https://lskinderm.com/devolucao',
     images: ['/images/og-devolucao.jpg'],
   },
   alternates: {

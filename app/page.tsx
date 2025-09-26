@@ -31,9 +31,9 @@ const productSchema = {
   "name": "Antiflacidez Facial L Skin Derm",
   "description": "Massageador facial com tecnologia hot/cold mode para combater flacidez, rugas e linhas de expressão. Resultados em 15 minutos por dia.",
   "image": [
-    "https://anti-flacidez.com/images/2-min.png",
-    "https://anti-flacidez.com/images/hot.png",
-    "https://anti-flacidez.com/images/atuando.png"
+    "https://lskinderm.com/images/2-min.png",
+    "https://lskinderm.com/images/hot.png",
+    "https://lskinderm.com/images/atuando.png"
   ],
   "brand": {
     "@type": "Brand",
@@ -104,8 +104,8 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "L Skin Derm",
-  "url": "https://anti-flacidez.com",
-  "logo": "https://anti-flacidez.com/images/logo-skinderm.png",
+  "url": "https://lskinderm.com",
+  "logo": "https://lskinderm.com/images/logo-skinderm.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+55-41-98454-9172",
@@ -132,7 +132,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://anti-flacidez.com"
+      "item": "https://lskinderm.com"
     }
   ]
 }
