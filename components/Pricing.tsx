@@ -65,8 +65,8 @@ export default function Pricing() {
         <div className="mb-16">
           <div className="overflow-hidden -mx-4 sm:-mx-6 lg:-mx-8">
             <div className="flex animate-scroll">
-              {/* Duplicate videos for seamless loop */}
-              {[...videos, ...videos].map((video, index) => (
+              {/* Duplicate videos for seamless loop - reorder to start with new video on mobile */}
+              {[...videos.slice(-1), ...videos, ...videos.slice(-1)].map((video, index) => (
                 <div key={`${video.id}-${index}`} className="flex-shrink-0 w-32 h-56 sm:w-40 sm:h-72 mx-2">
                   <div className="w-full h-full bg-gray-200 rounded-lg overflow-hidden">
                     <iframe
