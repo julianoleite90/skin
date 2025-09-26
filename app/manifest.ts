@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Antiflacidez L&L Skin - Tratamento Facial Profissional',
+    name: 'L Skin Derm Anti-flacidez - Tratamento Facial Profissional',
     short_name: 'Antiflacidez L&L',
-    description: 'Acabe com a flacidez facial! Antiflacidez L&L Skin com tecnologia hot/cold mode. Resultados em 15 minutos/dia.',
+    description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

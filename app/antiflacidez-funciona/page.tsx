@@ -7,12 +7,12 @@ import FAQ from '@/components/FAQ'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Antiflacidez L&L Skin Funciona? Saiba tudo aqui!',
-  description: 'Descubra como o Antiflacidez L&L Skin funciona, seus benefícios, resultados reais e por que é a escolha certa para combater a flacidez facial. Tudo que você precisa saber!',
+  title: 'L Skin Derm Anti-flacidez Funciona? Saiba tudo aqui!',
+  description: 'Descubra como o L Skin Derm Anti-flacidez funciona, seus benefícios, resultados reais e por que é a escolha certa para combater a flacidez facial. Tudo que você precisa saber!',
   keywords: 'antiflacidez funciona, L&L Skin funciona, como funciona antiflacidez, resultados antiflacidez, flacidez facial, lifting facial, massageador facial',
   openGraph: {
-    title: 'Antiflacidez L&L Skin Funciona? Saiba tudo aqui!',
-    description: 'Descubra como o Antiflacidez L&L Skin funciona, seus benefícios e resultados reais.',
+    title: 'L Skin Derm Anti-flacidez Funciona? Saiba tudo aqui!',
+    description: 'Descubra como o L Skin Derm Anti-flacidez funciona, seus benefícios e resultados reais.',
     url: 'https://anti-flacidez.com/antiflacidez-funciona',
     images: ['/images/og-blog.jpg'],
   },
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Antiflacidez L&L Skin Funciona? Saiba tudo aqui!",
-  "description": "Descubra como o Antiflacidez L&L Skin funciona, seus benefícios e resultados reais.",
+  "headline": "L Skin Derm Anti-flacidez Funciona? Saiba tudo aqui!",
+  "description": "Descubra como o L Skin Derm Anti-flacidez funciona, seus benefícios e resultados reais.",
   "author": {
     "@type": "Organization",
     "name": "L&L Skin"
@@ -35,7 +35,7 @@ const blogSchema = {
     "name": "L&L Skin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://anti-flacidez.com/images/logo.png.webp"
+      "url": "https://anti-flacidez.com/images/logo-skinderm.png"
     }
   },
   "datePublished": "2024-01-15",
@@ -57,11 +57,11 @@ export default function AntiflacidezFuncionaPage() {
         <div className="bg-gradient-to-br from-amber-50 to-white py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Antiflacidez L&L Skin Funciona?<br />
+              L Skin Derm Anti-flacidez Funciona?<br />
               <span className="text-amber-600">Saiba tudo aqui!</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Descubra como o Antiflacidez L&L Skin funciona, seus benefícios comprovados e por que milhares de mulheres já escolheram essa solução para combater a flacidez facial.
+              Descubra como o L Skin Derm Anti-flacidez funciona, seus benefícios comprovados e por que milhares de mulheres já escolheram essa solução para combater a flacidez facial.
             </p>
             <div className="flex items-center justify-center space-x-4 text-sm text-gray-500">
               <span>📅 15 de Janeiro, 2024</span>
@@ -77,10 +77,10 @@ export default function AntiflacidezFuncionaPage() {
             {/* Introduction */}
             <div className="bg-white rounded-2xl p-8 mb-8 shadow-sm border border-gray-200">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                O que é o Antiflacidez L&L Skin?
+                O que é o L Skin Derm Anti-flacidez?
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                O Antiflacidez L&L Skin é um massageador facial revolucionário que combina tecnologia hot mode (quente) e cold mode (frio) para combater a flacidez facial de forma eficaz e natural. Desenvolvido com base em estudos científicos sobre estimulação muscular e produção de colágeno.
+                O L Skin Derm Anti-flacidez é um massageador facial revolucionário que combina tecnologia hot mode (quente) e cold mode (frio) para combater a flacidez facial de forma eficaz e natural. Desenvolvido com base em estudos científicos sobre estimulação muscular e produção de colágeno.
               </p>
               <div className="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-lg">
                 <p className="text-amber-800 font-medium">
@@ -92,7 +92,7 @@ export default function AntiflacidezFuncionaPage() {
             {/* How it Works */}
             <div className="bg-white rounded-2xl p-8 mb-8 shadow-sm border border-gray-200">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Como Funciona o Antiflacidez L&L Skin?
+                Como Funciona o L Skin Derm Anti-flacidez?
               </h2>
               
               <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -149,7 +149,7 @@ export default function AntiflacidezFuncionaPage() {
                   <div className="flex justify-center items-center">
                     <img 
                       src="/images/atuando.png" 
-                      alt="Antiflacidez L&L Skin - Massageador Facial" 
+                      alt="L Skin Derm Anti-flacidez - Massageador Facial" 
                       className="max-w-56 h-auto rounded-lg shadow-lg"
                     />
                   </div>
@@ -192,7 +192,7 @@ export default function AntiflacidezFuncionaPage() {
             {/* How to Use */}
             <div className="bg-white rounded-2xl p-8 mb-8 shadow-sm border border-gray-200">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Como Usar o Antiflacidez L&L Skin
+                Como Usar o L Skin Derm Anti-flacidez
               </h2>
               
               <div className="space-y-6">

@@ -5,12 +5,12 @@ import Script from 'next/script'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Garantia de 180 Dias - Antiflacidez L&L Skin | Proteção Total',
-  description: 'Garantia de 180 dias para o Antiflacidez L&L Skin. Proteção completa contra defeitos e falhas. Troca grátis em caso de problemas.',
+  title: 'Garantia de 180 Dias - L Skin Derm Anti-flacidez | Proteção Total',
+  description: 'Garantia de 180 dias para o L Skin Derm Anti-flacidez. Proteção completa contra defeitos e falhas. Troca grátis em caso de problemas.',
   keywords: 'garantia antiflacidez, garantia 180 dias, proteção produto, troca grátis, defeitos fabricação, L&L Skin, política garantia, proteção total',
   openGraph: {
-    title: 'Garantia de 180 Dias - Antiflacidez L&L Skin',
-    description: 'Garantia de 180 dias para o Antiflacidez L&L Skin. Proteção completa contra defeitos e falhas.',
+    title: 'Garantia de 180 Dias - L Skin Derm Anti-flacidez',
+    description: 'Garantia de 180 dias para o L Skin Derm Anti-flacidez. Proteção completa contra defeitos e falhas.',
     url: 'https://anti-flacidez.com/garantia',
     images: ['/images/og-garantia.jpg'],
   },

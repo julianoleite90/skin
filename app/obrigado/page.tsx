@@ -5,11 +5,11 @@ import JsonLd from '@/components/JsonLd';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Compra Realizada - Antiflacidez L&L Skin | Obrigado!',
-  description: 'Compra realizada com sucesso! Acompanhe os próximos passos do seu pedido do Antiflacidez L&L Skin.',
+  title: 'Compra Realizada - L Skin Derm Anti-flacidez | Obrigado!',
+  description: 'Compra realizada com sucesso! Acompanhe os próximos passos do seu pedido do L Skin Derm Anti-flacidez.',
   keywords: 'compra realizada, obrigado, pedido confirmado, antiflacidez, L&L Skin, compra aprovada',
   openGraph: {
-    title: 'Compra Realizada - Antiflacidez L&L Skin',
+    title: 'Compra Realizada - L Skin Derm Anti-flacidez',
     description: 'Compra realizada com sucesso! Acompanhe os próximos passos do seu pedido.',
     url: 'https://anti-flacidez.com/obrigado',
     images: ['/images/og-obrigado.jpg'],
@@ -31,7 +31,7 @@ export default function ObrigadoPage() {
     {
       id: 2,
       title: "Pedido Enviado",
-      description: "Seu Antiflacidez L&L Skin foi despachado e está a caminho.",
+      description: "Seu L Skin Derm Anti-flacidez foi despachado e está a caminho.",
       icon: Truck,
       completed: true
     },
@@ -67,7 +67,7 @@ export default function ObrigadoPage() {
                 Compra realizada com sucesso!
               </h1>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Obrigado por escolher o Antiflacidez L&L Skin. Seu pedido está sendo processado.
+                Obrigado por escolher o L Skin Derm Anti-flacidez. Seu pedido está sendo processado.
               </p>
             </div>
           </div>

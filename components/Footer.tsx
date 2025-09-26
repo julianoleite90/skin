@@ -8,12 +8,12 @@ export default function Footer() {
             {/* Column 1 - Logo and Company Message */}
             <div className="space-y-6 text-center md:text-left">
               <img 
-                src="/images/logo.png.webp" 
+                src="/images/logo-skinderm.png" 
                 alt="SkinLift Pro Logo" 
                 className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-contain mx-auto md:mx-0"
               />
               <p className="text-base md:text-lg text-gray-600 leading-relaxed px-4 md:px-0">
-                Transforme sua pele com o Antiflacidez massageador L&L Skin. 
+                Transforme sua pele com o Antiflacidez massageador L Skin Derm. 
                 Tecnologia avançada para resultados visíveis 
                 em apenas 15 minutos por dia.
               </p>
@@ -37,7 +37,7 @@ export default function Footer() {
               <div className="space-y-4 px-4 md:px-0">
                 <div>
                   <p className="text-base font-bold text-gray-900 mb-2">Contato</p>
-                  <p className="text-sm md:text-base text-gray-600 break-all">contato@anti-flacidez.com</p>
+                  <p className="text-sm md:text-base text-gray-600 break-all">contato@lskinderm.com</p>
                   <p className="text-sm md:text-base text-gray-600">(41) 98454-9172 (whatsapp)</p>
                 </div>
                 
@@ -81,7 +81,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-200 py-4 text-center">
           <p className="text-gray-600 text-sm">
-            © 2025 Antiflacidez L&L Skin - Todos os direitos reservados.
+            © 2025 L Skin Derm Anti-flacidez - Todos os direitos reservados.
           </p>
         </div>
       </div>

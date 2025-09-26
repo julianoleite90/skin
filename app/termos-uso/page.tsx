@@ -4,12 +4,12 @@ import JsonLd from '@/components/JsonLd';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Termos de Uso - Antiflacidez L&L Skin | Condições de Compra',
-  description: 'Termos de uso do Antiflacidez L&L Skin. Conheça as condições de compra, entrega e garantia do produto.',
+  title: 'Termos de Uso - L Skin Derm Anti-flacidez | Condições de Compra',
+  description: 'Termos de uso do L Skin Derm Anti-flacidez. Conheça as condições de compra, entrega e garantia do produto.',
   keywords: 'termos uso, condições compra, termos antiflacidez, L&L Skin, política comercial, condições entrega, garantia produto',
   openGraph: {
-    title: 'Termos de Uso - Antiflacidez L&L Skin',
-    description: 'Termos de uso do Antiflacidez L&L Skin. Conheça as condições de compra e entrega.',
+    title: 'Termos de Uso - L Skin Derm Anti-flacidez',
+    description: 'Termos de uso do L Skin Derm Anti-flacidez. Conheça as condições de compra e entrega.',
     url: 'https://anti-flacidez.com/termos-uso',
     images: ['/images/og-termos.jpg'],
   },
@@ -43,14 +43,14 @@ export default function TermosUsoPage() {
               <section className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Aceitação dos Termos</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  Ao acessar e utilizar o site da Antiflacidez L&L Skin, você concorda em cumprir e estar vinculado aos seguintes termos e condições de uso. Se você não concordar com qualquer parte destes termos, não deve utilizar nosso site.
+                  Ao acessar e utilizar o site da L Skin Derm Anti-flacidez, você concorda em cumprir e estar vinculado aos seguintes termos e condições de uso. Se você não concordar com qualquer parte destes termos, não deve utilizar nosso site.
                 </p>
               </section>
 
               <section className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Descrição do Serviço</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  A Antiflacidez L&L Skin oferece:
+                  A L Skin Derm Anti-flacidez oferece:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                   <li>Produtos para tratamento facial anti-flacidez</li>
@@ -164,7 +164,7 @@ export default function TermosUsoPage() {
               <section className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Propriedade Intelectual</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Todo o conteúdo do site, incluindo textos, imagens, logotipos, design e software, é propriedade da Antiflacidez L&L Skin e está protegido por leis de direitos autorais e propriedade intelectual.
+                  Todo o conteúdo do site, incluindo textos, imagens, logotipos, design e software, é propriedade da L Skin Derm Anti-flacidez e está protegido por leis de direitos autorais e propriedade intelectual.
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                   <li>Não é permitida a reprodução sem autorização</li>
@@ -177,7 +177,7 @@ export default function TermosUsoPage() {
               <section className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Limitação de Responsabilidade</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  A Antiflacidez L&L Skin não se responsabiliza por:
+                  A L Skin Derm Anti-flacidez não se responsabiliza por:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                   <li>Danos indiretos ou consequenciais</li>

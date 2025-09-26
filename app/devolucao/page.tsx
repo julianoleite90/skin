@@ -5,12 +5,12 @@ import JsonLd from '@/components/JsonLd';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Política de Devolução - Antiflacidez L&L Skin | 7 Dias para Devolver',
-  description: 'Política de devolução do Antiflacidez L&L Skin. Direito de arrependimento em 7 dias. Devolução grátis e reembolso garantido.',
+  title: 'Política de Devolução - L Skin Derm Anti-flacidez | 7 Dias para Devolver',
+  description: 'Política de devolução do L Skin Derm Anti-flacidez. Direito de arrependimento em 7 dias. Devolução grátis e reembolso garantido.',
   keywords: 'devolução antiflacidez, política devolução, direito arrependimento, 7 dias devolver, reembolso garantido, L&L Skin, CDC, código defesa consumidor',
   openGraph: {
-    title: 'Política de Devolução - Antiflacidez L&L Skin',
-    description: 'Política de devolução do Antiflacidez L&L Skin. Direito de arrependimento em 7 dias.',
+    title: 'Política de Devolução - L Skin Derm Anti-flacidez',
+    description: 'Política de devolução do L Skin Derm Anti-flacidez. Direito de arrependimento em 7 dias.',
     url: 'https://anti-flacidez.com/devolucao',
     images: ['/images/og-devolucao.jpg'],
   },
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 const returnPolicySchema = {
   "@context": "https://schema.org",
   "@type": "ReturnPolicy",
-  "name": "Política de Devolução Antiflacidez L&L Skin",
-  "description": "Política de devolução do Antiflacidez L&L Skin conforme artigo 49 do Código de Defesa do Consumidor",
+  "name": "Política de Devolução L Skin Derm Anti-flacidez",
+  "description": "Política de devolução do L Skin Derm Anti-flacidez conforme artigo 49 do Código de Defesa do Consumidor",
   "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
   "merchantReturnDays": 7,
   "returnMethod": "https://schema.org/ReturnByMail",
@@ -70,7 +70,7 @@ export default function DevolucaoPage() {
               <section className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Direito de Devolução e Cancelamento</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  De acordo com o artigo 49 do Código de Defesa do Consumidor (Lei nº 8.078/1990), o cliente tem o direito de solicitar a devolução ou o cancelamento do produto <strong>Antiflacidez L&L Skin</strong> dentro do prazo de 7 (sete) dias corridos.
+                  De acordo com o artigo 49 do Código de Defesa do Consumidor (Lei nº 8.078/1990), o cliente tem o direito de solicitar a devolução ou o cancelamento do produto <strong>L Skin Derm Anti-flacidez</strong> dentro do prazo de 7 (sete) dias corridos.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Para exercer esse direito, o cliente deve entrar em contato com nosso atendimento ao cliente, informando o motivo da solicitação.

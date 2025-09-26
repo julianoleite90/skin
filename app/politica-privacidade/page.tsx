@@ -4,12 +4,12 @@ import JsonLd from '@/components/JsonLd';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidade - Antiflacidez L&L Skin | Proteção de Dados',
-  description: 'Política de privacidade do Antiflacidez L&L Skin. Conheça como protegemos seus dados pessoais conforme LGPD.',
+  title: 'Política de Privacidade - L Skin Derm Anti-flacidez | Proteção de Dados',
+  description: 'Política de privacidade do L Skin Derm Anti-flacidez. Conheça como protegemos seus dados pessoais conforme LGPD.',
   keywords: 'política privacidade, proteção dados, LGPD, privacidade antiflacidez, dados pessoais, L&L Skin, segurança informações',
   openGraph: {
-    title: 'Política de Privacidade - Antiflacidez L&L Skin',
-    description: 'Política de privacidade do Antiflacidez L&L Skin. Conheça como protegemos seus dados pessoais.',
+    title: 'Política de Privacidade - L Skin Derm Anti-flacidez',
+    description: 'Política de privacidade do L Skin Derm Anti-flacidez. Conheça como protegemos seus dados pessoais.',
     url: 'https://anti-flacidez.com/politica-privacidade',
     images: ['/images/og-privacidade.jpg'],
   },
@@ -43,7 +43,7 @@ export default function PoliticaPrivacidadePage() {
               <section className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Introdução</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  A Antiflacidez L&L Skin ("nós", "nosso" ou "empresa") respeita sua privacidade e está comprometida em proteger suas informações pessoais. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações quando você utiliza nosso site e serviços.
+                  A L Skin Derm Anti-flacidez ("nós", "nosso" ou "empresa") respeita sua privacidade e está comprometida em proteger suas informações pessoais. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações quando você utiliza nosso site e serviços.
                 </p>
               </section>
 

@@ -15,12 +15,12 @@ import JsonLd from '@/components/JsonLd'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'GLG - Antiflacidez Facial L&L Skin - O fim da flacidez | Tratamento Profissional',
-  description: 'Acabe com a flacidez facial! Antiflacidez L&L Skin com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias. Frete grátis!',
-  keywords: 'antiflacidez facial, flacidez, lifting facial, rugas, linhas de expressão, pele firme, tratamento facial, hot mode, cold mode, L&L Skin, massageador facial, colágeno, elastina, rejuvenescimento, beleza, estética, skincare, anti-aging',
+  title: 'GLG - L Skin Derm - Anti-flacidez facial | Tratamento Profissional',
+  description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias. Frete grátis!',
+  keywords: 'antiflacidez facial, flacidez, lifting facial, rugas, linhas de expressão, pele firme, tratamento facial, hot mode, cold mode, L Skin Derm, massageador facial, colágeno, elastina, rejuvenescimento, beleza, estética, skincare, anti-aging',
   openGraph: {
-    title: 'GLG - Antiflacidez Facial L&L Skin - O fim da flacidez',
-    description: 'Acabe com a flacidez facial! Antiflacidez L&L Skin com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias.',
+    title: 'GLG - L Skin Derm - Anti-flacidez facial',
+    description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias.',
     images: ['/images/og-image.jpg'],
   },
 }
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Antiflacidez Facial L&L Skin",
+  "name": "Antiflacidez Facial L Skin Derm",
   "description": "Massageador facial com tecnologia hot/cold mode para combater flacidez, rugas e linhas de expressão. Resultados em 15 minutos por dia.",
   "image": [
     "https://anti-flacidez.com/images/2-min.png",
@@ -37,7 +37,7 @@ const productSchema = {
   ],
   "brand": {
     "@type": "Brand",
-    "name": "L&L Skin"
+    "name": "L Skin Derm"
   },
   "category": "Beleza e Estética",
   "offers": {
@@ -48,7 +48,7 @@ const productSchema = {
     "availability": "https://schema.org/InStock",
     "seller": {
       "@type": "Organization",
-      "name": "L&L Skin"
+      "name": "L Skin Derm"
     },
     "shippingDetails": {
       "@type": "OfferShippingDetails",
@@ -103,9 +103,9 @@ const productSchema = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "L&L Skin",
+  "name": "L Skin Derm",
   "url": "https://anti-flacidez.com",
-  "logo": "https://anti-flacidez.com/images/logo.png.webp",
+  "logo": "https://anti-flacidez.com/images/logo-skinderm.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+55-41-98454-9172",

@@ -5,13 +5,13 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-12 md:h-16">
           {/* Logo */}
           <div className="flex items-center justify-start flex-1 pl-4 md:pl-0">
             <img 
-              src="/images/logo.png.webp" 
+              src="/images/logo-skinderm.png" 
               alt="SkinLift Pro Logo" 
-              className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] object-contain"
+              className="w-[120px] h-[120px] md:w-[160px] md:h-[160px] object-contain"
             />
           </div>
 

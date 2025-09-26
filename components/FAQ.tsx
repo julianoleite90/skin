@@ -8,7 +8,7 @@ export default function FAQ() {
   const faqs = [
     {
       id: 1,
-      question: "Como funciona o Antiflacidez L&L Skin?",
+      question: "Como funciona o L Skin Derm Anti-flacidez?",
       answer: "O Antiflacidez massageador utiliza tecnologia de calor e frio para estimular a circulação sanguínea e promover a produção de colágeno. Com apenas 15 minutos por dia, você pode combater a flacidez facial, reduzir linhas de expressão e melhorar a firmeza da pele."
     },
     {
@@ -19,7 +19,7 @@ export default function FAQ() {
     {
       id: 3,
       question: "O produto é seguro para todos os tipos de pele?",
-      answer: "Sim, o Antiflacidez massageador L&L Skin foi desenvolvido para ser seguro para todos os tipos de pele. No entanto, recomendamos fazer um teste em uma pequena área antes do uso completo, especialmente se você tem pele sensível ou condições dermatológicas específicas."
+      answer: "Sim, o Antiflacidez massageador L Skin Derm foi desenvolvido para ser seguro para todos os tipos de pele. No entanto, recomendamos fazer um teste em uma pequena área antes do uso completo, especialmente se você tem pele sensível ou condições dermatológicas específicas."
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ export default function FAQ() {
     {
       id: 7,
       question: "O produto funciona para homens também?",
-      answer: "Sim, o Antiflacidez massageador L&L Skin é eficaz para homens e mulheres. A tecnologia de calor e frio beneficia todos os tipos de pele, independentemente do gênero."
+      answer: "Sim, o Antiflacidez massageador L Skin Derm é eficaz para homens e mulheres. A tecnologia de calor e frio beneficia todos os tipos de pele, independentemente do gênero."
     },
     {
       id: 8,

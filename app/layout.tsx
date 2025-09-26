@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Antiflacidez Facial L&L Skin - O fim da flacidez | Tratamento Profissional',
-  description: 'Acabe com a flacidez facial! Antiflacidez L&L Skin com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias. Frete grátis!',
-  keywords: 'antiflacidez facial, flacidez, lifting facial, rugas, linhas de expressão, pele firme, tratamento facial, hot mode, cold mode, L&L Skin, massageador facial, colágeno, elastina, rejuvenescimento, beleza, estética, skincare, anti-aging',
-  authors: [{ name: 'L&L Skin' }],
-  creator: 'L&L Skin',
-  publisher: 'L&L Skin',
+  title: 'L Skin Derm - Anti-flacidez facial | Tratamento Profissional',
+  description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias. Frete grátis!',
+  keywords: 'antiflacidez facial, flacidez, lifting facial, rugas, linhas de expressão, pele firme, tratamento facial, hot mode, cold mode, L Skin Derm, massageador facial, colágeno, elastina, rejuvenescimento, beleza, estética, skincare, anti-aging',
+  authors: [{ name: 'L Skin Derm' }],
+  creator: 'L Skin Derm',
+  publisher: 'L Skin Derm',
   formatDetection: {
     email: false,
     address: false,
@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Antiflacidez Facial L&L Skin - O fim da flacidez',
-    description: 'Acabe com a flacidez facial! Antiflacidez L&L Skin com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias.',
+    title: 'L Skin Derm - Anti-flacidez facial',
+    description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias.',
     url: 'https://anti-flacidez.com',
-    siteName: 'Antiflacidez L&L Skin',
+    siteName: 'L Skin Derm Anti-flacidez',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Antiflacidez Facial L&L Skin - Tratamento Profissional',
+        alt: 'Antiflacidez Facial L Skin Derm - Tratamento Profissional',
       },
     ],
     locale: 'pt_BR',
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Antiflacidez Facial L&L Skin - O fim da flacidez',
-    description: 'Acabe com a flacidez facial! Antiflacidez L&L Skin com tecnologia hot/cold mode. Resultados em 15 minutos/dia.',
+    title: 'L Skin Derm - Anti-flacidez facial',
+    description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia.',
     images: ['/images/og-image.jpg'],
   },
   robots: {
