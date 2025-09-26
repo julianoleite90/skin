@@ -16,13 +16,18 @@ export default function Kits() {
             Apenas 15 minutos por dia para transformar sua pele com um rejuvenescimento poderoso.
           </p>
           <div className="text-xl text-gray-600 max-w-3xl mx-auto text-left">
-            {/* Image - Mobile only */}
+            {/* Video - Mobile only */}
             <div className="flex justify-center mb-6 md:hidden">
-              <img 
-                src="/images/atuando.png" 
-                alt="Kits disponíveis" 
-                className="w-full max-w-md h-auto object-contain"
-              />
+              <div className="w-full max-w-md aspect-video">
+                <iframe
+                  src="https://player.vimeo.com/video/1122343689?autoplay=1&loop=1&muted=1&controls=0&background=1"
+                  className="w-full h-full rounded-lg"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title="L Skin Derm em ação"
+                ></iframe>
+              </div>
             </div>
             <strong>Passo 1:</strong> Aplique o sérum uniformemente no rosto ou pescoço para uma hidratação profunda.<br />
             <br />
@@ -117,13 +122,18 @@ export default function Kits() {
             </div>
           </div>
 
-          {/* Right Column - Image - Desktop only */}
+          {/* Right Column - Video - Desktop only */}
           <div className="hidden md:flex justify-center order-2">
-            <img 
-              src="/images/atuando.png" 
-              alt="Kits disponíveis" 
-              className="w-full max-w-md h-auto object-contain"
-            />
+            <div className="w-full max-w-2xl aspect-video">
+              <iframe
+                src="https://player.vimeo.com/video/1122343689?autoplay=1&loop=1&muted=1&controls=0&background=1"
+                className="w-full h-full rounded-lg"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                title="L Skin Derm em ação"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>

@@ -38,7 +38,7 @@ export default function Hero() {
             {/* Headline */}
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
               <span className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">Rejuvenesça sua pele:</span><br />
-              Firmeza e juventude sem cirurgia!
+              Firmeza e juventude sem agulhas!
             </h1>
 
             {/* Subheadline */}

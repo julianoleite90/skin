@@ -77,13 +77,13 @@ export default function BeforeAfter() {
           <div className="space-y-6 order-2 md:order-1">
             <div className="text-center md:text-left">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Transformação Visível
+                Efeito botox em casa
               </h3>
               <p className="text-lg text-gray-600 mb-6">
                 L Skin Derm estimula a produção de colágeno na pele por meio da massagem com microcorrentes, promovendo firmeza e um rejuvenescimento visível e instantâneo.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Firmeza e juventude sem cirurgia!
+                Firmeza e juventude sem agulhas!
               </p>
             </div>
 
