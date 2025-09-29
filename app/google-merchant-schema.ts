@@ -2,32 +2,32 @@
 export const googleMerchantSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Antiflacidez Facial L&L Skin",
-  "description": "Massageador facial com tecnologia hot/cold mode para combater flacidez, rugas e linhas de expressão. Resultados em 15 minutos por dia.",
+  "name": "Phynamax - Suplemento para Emagrecimento",
+  "description": "Suplemento com 6 ingredientes poderosos para emagrecimento saudável. Reduz fome, acelera metabolismo e queima gordura de forma natural. Resultados em poucas semanas.",
   "image": [
-    "https://lskinderm.com/images/2-min.png",
-    "https://lskinderm.com/images/hot.png",
-    "https://lskinderm.com/images/atuando.png"
+    "https://phynamax.com.br/images/2-min.png",
+    "https://phynamax.com.br/images/hot.png",
+    "https://phynamax.com.br/images/atuando.png"
   ],
   "brand": {
     "@type": "Brand",
-    "name": "L&L Skin"
+    "name": "Phynamax"
   },
-  "category": "Beleza e Estética > Cuidados com a Pele > Massageadores Faciais",
-  "sku": "ANTIFLACIDEZ-LL-SKIN-001",
-  "mpn": "LLSKIN001",
+  "category": "Saúde e Bem-estar > Suplementos > Emagrecimento",
+  "sku": "PHYNAMAX-001",
+  "mpn": "PHY-001",
   "gtin": "7891234567890",
   "offers": {
     "@type": "Offer",
-    "price": "88.25",
+    "price": "257.20",
     "priceCurrency": "BRL",
     "priceValidUntil": "2025-12-31",
     "availability": "https://schema.org/InStock",
     "itemCondition": "https://schema.org/NewCondition",
     "seller": {
       "@type": "Organization",
-      "name": "L&L Skin",
-      "url": "https://lskinderm.com"
+      "name": "Phynamax",
+      "url": "https://phynamax.com.br"
     },
     "shippingDetails": {
       "@type": "OfferShippingDetails",
@@ -60,7 +60,7 @@ export const googleMerchantSchema = {
     "returnPolicy": {
       "@type": "MerchantReturnPolicy",
       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-      "merchantReturnDays": 180,
+      "merchantReturnDays": 30,
       "returnMethod": "https://schema.org/ReturnByMail",
       "returnFees": "https://schema.org/FreeReturn"
     }
@@ -85,7 +85,7 @@ export const googleMerchantSchema = {
         "bestRating": "5",
         "worstRating": "1"
       },
-      "reviewBody": "Produto fantástico! Minha pele está mais firme e com um brilho natural que não tinha há anos.",
+      "reviewBody": "Produto incrível! Em apenas 3 semanas já vejo resultados na perda de peso. A fome diminuiu e estou perdendo peso de forma saudável!",
       "datePublished": "2024-01-15"
     },
     {
@@ -100,25 +100,25 @@ export const googleMerchantSchema = {
         "bestRating": "5",
         "worstRating": "1"
       },
-      "reviewBody": "Excelente produto! Resultados visíveis em poucas semanas de uso.",
+      "reviewBody": "Excelente suplemento! Reduziu minha fome e acelerou meu metabolismo. Recomendo!",
       "datePublished": "2024-01-10"
     }
   ],
   "additionalProperty": [
     {
       "@type": "PropertyValue",
-      "name": "Tecnologia",
-      "value": "Hot/Cold Mode"
+      "name": "Ingredientes",
+      "value": "6 ingredientes poderosos"
     },
     {
       "@type": "PropertyValue",
-      "name": "Tempo de Uso",
-      "value": "15 minutos por dia"
+      "name": "Dosagem",
+      "value": "2 cápsulas ao dia"
     },
     {
       "@type": "PropertyValue",
       "name": "Garantia",
-      "value": "180 dias"
+      "value": "30 dias"
     },
     {
       "@type": "PropertyValue",
