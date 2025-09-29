@@ -8,28 +8,28 @@ export default function FAQ() {
   const faqs = [
     {
       id: 1,
-      question: "Como devo tomar o Biocapilar?",
-      answer: "Recomenda-se tomar 2 cápsulas por dia, preferencialmente antes das principais refeições. Para melhores resultados, tome uma cápsula 30 minutos antes do almoço e outra 30 minutos antes do jantar, sempre com um copo de água."
+      question: "Como devo tomar o Phynamax?",
+      answer: "Recomenda-se tomar 2 cápsulas por dia, 30 minutos antes das principais refeições. Para melhores resultados, tome uma cápsula 30 minutos antes do almoço e outra 30 minutos antes do jantar, sempre com um copo de água."
     },
     {
       id: 2,
       question: "Qual é a composição?",
-      answer: "Biocapilar é composto por: Nicotinamida (Vitamina B3), D-Pantotenato de Cálcio (Vitamina B5), Cloridrato de Piridoxina (Vitamina B6), D-Biotina (Vitamina B7), Zinco, Sulfato Cúprico (Cobre), Acetato de Retinila (Vitamina A), DL-Alfatocoferila (Vitamina E) e Colágeno Hidrolisado. Nove poderosos ingredientes que juntos promovem um crescimento capilar saudável e totalmente natural."
+      answer: "Phynamax é composto por: Espirulina, Cromo, Guaraná, Psyllium, Agar Agar e Quitosana. Seis poderosos ingredientes que juntos promovem emagrecimento saudável, reduzem a fome e aceleram o metabolismo de forma totalmente natural."
     },
     {
       id: 3,
-      question: "Preciso usar outros produtos?",
-      answer: "Não é necessário! Inclusive a fórmula é tão eficaz e em alguns casos melhor que os produtos vendidos em farmácia. O Biocapilar age de dentro para fora, tratando a raiz do problema de forma natural e sem efeitos colaterais."
+      question: "Preciso fazer dieta restritiva?",
+      answer: "Não é necessário! O Phynamax age reduzindo a fome e acelerando o metabolismo, permitindo que você emagreça de forma natural. A fórmula é tão eficaz que você pode manter uma alimentação normal e ainda assim perder peso."
     },
     {
       id: 4,
-      question: "Quanto tempo demora para ver resultados no cabelo?",
-      answer: "Os primeiros resultados começam a aparecer nas primeiras semanas de uso, com redução da queda e fortalecimento dos fios. O crescimento e espessamento mais significativo torna-se visível a partir do segundo mês de uso contínuo."
+      question: "Quanto tempo demora para ver resultados na perda de peso?",
+      answer: "Os primeiros resultados começam a aparecer nas primeiras semanas de uso, com redução da fome e aumento da energia. A perda de peso mais significativa torna-se visível a partir do segundo mês de uso contínuo."
     },
     {
       id: 5,
-      question: "O Biocapilar tem efeitos colaterais?",
-      answer: "Por ser um produto 100% natural, o Biocapilar não apresenta efeitos colaterais. Você pode tomar sem riscos e aproveitar todos os benefícios. Importante: pessoas que possuem alergias a crustáceos não devem utilizar."
+      question: "O Phynamax tem efeitos colaterais?",
+      answer: "Por ser um produto 100% natural, o Phynamax não apresenta efeitos colaterais. Você pode tomar sem riscos e aproveitar todos os benefícios. Importante: pessoas que possuem alergias a crustáceos não devem utilizar devido à presença de Quitosana."
     },
     {
       id: 6,
@@ -94,7 +94,7 @@ export default function FAQ() {
       </div>
       
       {/* Gradient separator line */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pink-400 to-transparent"></div>
     </section>
   )
 }

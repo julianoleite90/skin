@@ -37,13 +37,13 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              <span className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">Acabe com a queda:</span><br />
-              Cabelos mais fortes e sem entradas!
+              <span className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">Perca peso mais rápido:</span><br />
+              Recupere a saúde e tenha mais qualidade de vida!
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl text-gray-600 leading-relaxed pt-2 md:pt-8 lg:pt-8">
-              Está frustrado com a queda de cabelo e as entradas cada vez mais visíveis? Diga adeus à queda e dê as boas-vindas ao crescimento de novos fios! Recupere a densidade, preencha as falhas e conquiste cabelos fortes, saudáveis e cheios de vida novamente!
+              Cansada de dietas que não funcionam e exercícios que não dão resultado? Conheça a fórmula de Phynamax. Um poderoso emagrecedor natural, feito para quem busca emagrecimento saudável sem sacrifícios.
             </p>
 
 
@@ -54,11 +54,17 @@ export default function Hero() {
                           const kitsSection = document.getElementById('kits');
                           if (kitsSection) {
                             kitsSection.scrollIntoView({ behavior: 'smooth' });
+                          } else {
+                            // Fallback: scroll to treatment section
+                            const treatmentSection = document.getElementById('treatment');
+                            if (treatmentSection) {
+                              treatmentSection.scrollIntoView({ behavior: 'smooth' });
+                            }
                           }
                         }}
-                        className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white font-semibold py-4 px-20 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
+                        className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white font-semibold py-5 px-6 md:px-20 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-base md:text-lg whitespace-nowrap"
                       >
-                        COMPRAR AGORA
+                        SIM! EU QUERO EMAGRECER
                       </button>
                     </div>
 
@@ -79,7 +85,7 @@ export default function Hero() {
           <div className="relative hidden lg:block">
             {/* Main Image */}
             <div className="relative z-10 mb-4 translate-y-20 -mt-20">
-              <div className="w-full aspect-square max-w-[900px] mx-auto">
+              <div className="w-full aspect-square max-w-[1200px] mx-auto">
                 <img
                   src={productImages[selectedImage].main}
                   alt="SkinLift Pro - Lifting Facial"
@@ -92,7 +98,7 @@ export default function Hero() {
       </div>
       
       {/* Linha de separação com gradiente prateado */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pink-400 to-transparent"></div>
     </section>
   )
 }

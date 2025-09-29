@@ -1,260 +1,208 @@
+import { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import WhatsAppButton from '@/components/WhatsAppButton'
-import Script from 'next/script'
-import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Termos de Garantia - Biocapilar | Política de Devolução',
-  description: 'Conheça os detalhes sobre nossa política de garantia e devolução do Biocapilar. Garantia de satisfação de 30 dias e proteção total.',
-  keywords: 'garantia biocapilar, política devolução, garantia satisfação, termos garantia, reembolso, troca produto',
+  title: 'Termos de Garantia - Phynamax',
+  description: 'Conheça os detalhes sobre nossa política de garantia e devolução do Phynamax. Garantia de 30 dias e total transparência.',
+  keywords: 'garantia phynamax, devolução, reembolso, termos de garantia, satisfação garantida',
   openGraph: {
-    title: 'Termos de Garantia - Biocapilar',
-    description: 'Conheça os detalhes sobre nossa política de garantia e devolução do Biocapilar.',
-    url: 'https://lskinderm.com/garantia',
-    images: ['/images/og-garantia.jpg'],
-  },
-  alternates: {
-    canonical: '/garantia',
+    title: 'Termos de Garantia - Phynamax',
+    description: 'Conheça os detalhes sobre nossa política de garantia e devolução do Phynamax.',
+    type: 'website',
   },
 }
 
-export default function Garantia() {
+export default function GarantiaPage() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Google Analytics */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-GEJ71JEFEM"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-GEJ71JEFEM');
-        `}
-      </Script>
-      
-      {/* Facebook Pixel */}
-      <Script id="facebook-pixel" strategy="afterInteractive">
-        {`
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '1480193823312637');
-          fbq('track', 'PageView');
-        `}
-      </Script>
-      
+    <div className="min-h-screen bg-gray-50">
       <Header />
-      
-      <main className="pt-20">
-        <div className="container-custom py-16">
-          <div className="max-w-4xl mx-auto">
-            {/* Header da Página */}
-            <div className="text-center mb-12">
-              <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                  🛡️ Nossa Garantia para Você
-                </h1>
-                <p className="text-xl text-gray-700 mb-4">
-                  Ficamos do seu lado! Se não ficar satisfeito, devolvemos seu dinheiro.
+      {/* Header */}
+      <div className="bg-white shadow-sm">
+        <div className="max-w-4xl mx-auto px-4 py-8">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
+            Termos de Garantia
+          </h1>
+          <p className="text-lg text-gray-600 text-center mt-4">
+            Conheça os detalhes sobre nossa política de garantia e devolução
+          </p>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        <div className="bg-white rounded-lg shadow-sm p-8">
+          
+          {/* Compromisso com satisfação */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Compromisso com sua satisfação
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Na Phynamax, acreditamos que a confiança de nossos clientes é nosso maior patrimônio. Por isso, oferecemos uma política de garantia transparente e justa, que assegura sua total satisfação com nossos produtos. Nosso compromisso vai além do que determina a legislação, pois queremos que você tenha a melhor experiência possível.
+              </p>
+              <p>
+                Abaixo, detalhamos todas as informações sobre nossas garantias, procedimentos de devolução e reembolso. Caso tenha qualquer dúvida após a leitura, nossa equipe de atendimento está à disposição para ajudá-lo através dos nossos canais de contato.
+              </p>
+            </div>
+          </section>
+
+          {/* Garantia de Arrependimento */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Garantia de Arrependimento
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                De acordo com o Código de Defesa do Consumidor (Lei nº 8.078/90), o cliente tem o direito de solicitar o cancelamento da compra em até 7 (sete) dias corridos a partir da data de recebimento do produto. Este direito está previsto no artigo 49 do CDC, que estabelece o direito de arrependimento para compras realizadas fora do estabelecimento comercial, como é o caso de compras online.
+              </p>
+              <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
+                <p className="text-sm text-blue-800">
+                  <strong>Base Legal:</strong> Art. 49 do CDC - "O consumidor pode desistir do contrato, no prazo de 7 dias a contar de sua assinatura ou do ato de recebimento do produto ou serviço, sempre que a contratação de fornecimento de produtos e serviços ocorrer fora do estabelecimento comercial, especialmente por telefone ou a domicílio."
                 </p>
-                <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
-                  <span className="bg-white px-3 py-1 rounded-full">✅ 30 dias de garantia</span>
-                  <span className="bg-white px-3 py-1 rounded-full">✅ Reembolso total</span>
-                  <span className="bg-white px-3 py-1 rounded-full">✅ Sem burocracias</span>
-                </div>
               </div>
             </div>
+          </section>
 
-            {/* Conteúdo da Garantia */}
-            <div className="space-y-8">
+          {/* Garantia de Satisfação */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Garantia de Satisfação
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Além da garantia legal, oferecemos uma garantia de satisfação de 30 (trinta) dias após a compra, válida exclusivamente para compras de 1 (um) frasco. Esta garantia representa nosso compromisso com a qualidade do produto e a satisfação dos nossos clientes.
+              </p>
               
-              {/* Garantia Principal */}
-              <div className="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-xl p-8">
-                <div className="text-center mb-6">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    🎯 Como Funciona Nossa Garantia
-                  </h2>
-                  <p className="text-lg text-gray-700">
-                    Simples, rápido e sem complicações!
-                  </p>
-                </div>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-white rounded-lg p-6 border border-green-200">
-                    <h3 className="text-xl font-bold text-green-700 mb-3">📦 Comprou 1 Frasco?</h3>
-                    <p className="text-gray-700 mb-4">
-                      <strong>30 dias de garantia!</strong> Se não ficar satisfeito, devolvemos 100% do seu dinheiro.
-                    </p>
-                    <div className="text-sm text-gray-600">
-                      <p>✅ Sem perguntas chatas</p>
-                      <p>✅ Reembolso total</p>
-                      <p>✅ Frete grátis para devolução</p>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-white rounded-lg p-6 border border-blue-200">
-                    <h3 className="text-xl font-bold text-blue-700 mb-3">📦 Comprou Kit (2+ frascos)?</h3>
-                    <p className="text-gray-700 mb-4">
-                      <strong>7 dias de garantia legal!</strong> Direito garantido por lei.
-                    </p>
-                    <div className="text-sm text-gray-600">
-                      <p>✅ Proteção do Código de Defesa do Consumidor</p>
-                      <p>✅ Reembolso total</p>
-                      <p>✅ Frete grátis para devolução</p>
-                    </div>
-                  </div>
-                </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Como solicitar a garantia de satisfação:
+                </h3>
+                <ol className="list-decimal list-inside space-y-2 text-gray-700">
+                  <li>Envie um e-mail para sac@bourjun.com.br com o assunto: "Garantia de satisfação"</li>
+                  <li>Anexe a nota fiscal do produto</li>
+                  <li>Informe o motivo da insatisfação (opcional, mas recomendado)</li>
+                  <li>Aguarde o retorno da nossa equipe em até 48 horas úteis</li>
+                </ol>
               </div>
 
-              {/* Como Solicitar */}
-              <div className="bg-white border border-gray-200 rounded-xl p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-                  📞 Como Solicitar a Garantia
-                </h2>
-                
-                <div className="grid md:grid-cols-3 gap-6">
-                  <div className="text-center">
-                    <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-2xl">📧</span>
-                    </div>
-                    <h3 className="font-bold text-gray-900 mb-2">1. Envie um Email</h3>
-                    <p className="text-sm text-gray-600">
-                      Para: <strong>sac@bourjun.com.br</strong><br/>
-                      Assunto: "Garantia de satisfação"
-                    </p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-2xl">📄</span>
-                    </div>
-                    <h3 className="font-bold text-gray-900 mb-2">2. Anexe a Nota Fiscal</h3>
-                    <p className="text-sm text-gray-600">
-                      É só anexar o comprovante de compra que você recebeu por email
-                    </p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-2xl">⏰</span>
-                    </div>
-                    <h3 className="font-bold text-gray-900 mb-2">3. Aguarde o Retorno</h3>
-                    <p className="text-sm text-gray-600">
-                      Respondemos em até 48 horas com as instruções para devolução
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Produto com Defeito */}
-              <div className="bg-red-50 border border-red-200 rounded-xl p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-                  ⚠️ Produto com Defeito?
-                </h2>
-                <p className="text-center text-gray-700 mb-6">
-                  Se o produto chegou danificado ou com problema de fabricação, trocamos sem custo!
+              <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                <p className="text-sm text-yellow-800">
+                  <strong>Observação:</strong> A garantia de satisfação é um benefício adicional oferecido pela empresa, não substituindo as garantias legais previstas no Código de Defesa do Consumidor.
                 </p>
-                
-                <div className="bg-white rounded-lg p-6">
-                  <h3 className="font-bold text-gray-900 mb-3">O que fazer:</h3>
-                  <ol className="list-decimal list-inside space-y-2 text-gray-700">
-                    <li>Envie email para <strong>sac@bourjun.com.br</strong> com assunto "Produto com defeito"</li>
-                    <li>Anexe fotos do problema</li>
-                    <li>Anexe a nota fiscal</li>
-                    <li>Nós enviamos um produto novo e pagamos o frete!</li>
-                  </ol>
-                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Trocas por Defeitos */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Trocas por Defeitos ou Vícios
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Trocas por defeitos ou vícios no produto são realizadas sem custo adicional para o cliente, conforme previsto no Código de Defesa do Consumidor. Caso o produto apresente qualquer problema de fabricação, embalagem danificada ou qualquer outro vício que comprometa sua qualidade ou eficácia, o cliente tem direito à substituição do produto.
+              </p>
+              
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Procedimento para solicitação de troca:
+                </h3>
+                <ol className="list-decimal list-inside space-y-2 text-gray-700">
+                  <li>Entre em contato com nosso SAC pelo e-mail sac@bourjun.com.br com o assunto: "Solicitação de troca por defeito"</li>
+                  <li>Anexe fotos do produto com o defeito ou vício identificado</li>
+                  <li>Anexe a nota fiscal de compra</li>
+                  <li>Nossa equipe analisará o caso e retornará com as instruções para a troca</li>
+                </ol>
               </div>
 
-              {/* Informações Importantes */}
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-                  ℹ️ Informações Importantes
-                </h2>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-3">⏱️ Prazos</h3>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      <li>• Análise: até 5 dias úteis</li>
-                      <li>• Reembolso: até 10 dias úteis</li>
-                      <li>• Resposta: até 48 horas</li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-3">📦 Estado do Produto</h3>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      <li>• Pode estar aberto</li>
-                      <li>• Preferencialmente na embalagem original</li>
-                      <li>• Não precisa estar intacto</li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-3">💳 Reembolso</h3>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      <li>• Mesma forma de pagamento</li>
-                      <li>• Mesmo CPF da compra</li>
-                      <li>• 100% do valor pago</li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-3">🚚 Frete</h3>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      <li>• Devolução: por nossa conta</li>
-                      <li>• Troca por defeito: por nossa conta</li>
-                      <li>• Sem custo para você</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* Contato */}
-              <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-xl p-8 text-center">
-                <h2 className="text-2xl font-bold mb-4">
-                  💬 Precisa de Ajuda?
-                </h2>
-                <p className="text-lg mb-6">
-                  Nossa equipe está aqui para te ajudar!
+              <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
+                <p className="text-sm text-blue-800">
+                  <strong>Base Legal:</strong> Art. 18 do CDC - "Os fornecedores de produtos de consumo duráveis ou não duráveis respondem solidariamente pelos vícios de qualidade ou quantidade que os tornem impróprios ou inadequados ao consumo a que se destinam ou lhes diminuam o valor, assim como por aqueles decorrentes da disparidade, com as indicações constantes do recipiente, da embalagem, rotulagem ou mensagem publicitária, respeitadas as variações decorrentes de sua natureza, podendo o consumidor exigir a substituição das partes viciadas."
                 </p>
-                <div className="space-y-3">
-                  <p className="text-lg">
-                    📧 <strong>sac@bourjun.com.br</strong>
-                  </p>
-                  <p className="text-lg">
-                    📱 <strong>(41) 98454-9172</strong>
-                  </p>
-                  <p className="text-sm opacity-90">
-                    Segunda a Sexta: 9h às 18h
-                  </p>
-                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Condições Gerais */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Condições Gerais
+            </h2>
+            <div className="space-y-6 text-gray-700 leading-relaxed">
+              
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">1. Prazo para Análise:</h3>
+                <p>Todas as solicitações de garantia, devolução ou troca serão analisadas em até 5 (cinco) dias úteis após o recebimento da solicitação completa com todos os documentos necessários.</p>
               </div>
 
-              {/* Data de Atualização */}
-              <div className="text-center text-sm text-gray-500">
-                <p>Última atualização: 28/09/2025</p>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">2. Reembolso:</h3>
+                <p>Em caso de devolução aprovada, o reembolso será processado em até 10 (dez) dias úteis, na mesma forma de pagamento utilizada na compra, conforme previsto no artigo 49, parágrafo único, do CDC. O reembolso será realizado exclusivamente no CPF correspondente à compra realizada e o método de reembolso será obrigatoriamente o mesmo utilizado para o pagamento original (cartão de crédito, boleto, PIX, etc.).</p>
               </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">3. Estado do Produto:</h3>
+                <p>Para exercer o direito de arrependimento ou a garantia de satisfação, o produto deve estar em condições adequadas, preferencialmente na embalagem original, com todos os acessórios e componentes recebidos.</p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">4. Frete de Devolução:</h3>
+                <p>Em casos de arrependimento (7 dias) ou garantia de satisfação (30 dias), o custo do frete de devolução será por conta da empresa. Em casos de troca por defeito, tanto o frete de devolução quanto o de envio do novo produto serão por conta da empresa.</p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">5. Limitações:</h3>
+                <p>A garantia de satisfação de 30 dias é válida apenas para a compra de 1 (um) frasco. Para compras de kits promocionais (3 ou 6 frascos), aplica-se apenas a garantia legal de 7 dias prevista no CDC.</p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">6. Documentação Necessária:</h3>
+                <p>Para qualquer solicitação de garantia, é imprescindível a apresentação da nota fiscal de compra. Solicitações sem este documento poderão ser recusadas.</p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">7. Casos Omissos:</h3>
+                <p>Situações não previstas nestes termos serão analisadas individualmente pela equipe jurídica da empresa, sempre em conformidade com a legislação vigente e buscando a melhor solução para o cliente.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Disposições Finais */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Disposições Finais
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Os presentes Termos de Garantia estão em conformidade com o Código de Defesa do Consumidor (Lei nº 8.078/90) e demais legislações aplicáveis. A empresa se reserva o direito de alterar estes termos a qualquer momento, sendo as alterações aplicáveis apenas para compras realizadas após a data de modificação.
+              </p>
+              <p>
+                Ao realizar uma compra em nosso site, o cliente declara estar ciente e de acordo com todos os termos e condições aqui estabelecidos. Recomendamos a leitura integral deste documento antes de finalizar qualquer compra.
+              </p>
+              <p>
+                Para esclarecimentos adicionais ou dúvidas sobre nossa política de garantia, entre em contato com nosso Serviço de Atendimento ao Cliente através do e-mail sac@bourjun.com.br ou pelo telefone (41) 98454-9172, de segunda a sexta-feira, das 9h às 18h.
+              </p>
+              <p className="text-sm text-gray-500">
+                <strong>Última atualização:</strong> 10/07/2025
+              </p>
+            </div>
+          </section>
+
+          {/* Contact Info */}
+          <div className="bg-gray-50 rounded-lg p-6 mt-8">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Contato</h3>
+            <div className="space-y-2 text-gray-700">
+              <p><strong>E-mail:</strong> sac@bourjun.com.br</p>
+              <p><strong>Telefone:</strong> (41) 98454-9172</p>
+              <p><strong>Horário de atendimento:</strong> Segunda a sexta-feira, das 9h às 18h</p>
             </div>
           </div>
+
         </div>
-      </main>
-
-      {/* Separator line */}
-      <div className="border-t border-gray-200"></div>
-
+      </div>
       <Footer />
-      <WhatsAppButton />
     </div>
   )
 }

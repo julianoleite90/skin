@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Biocapilar - Acabe com a Queda de Cabelo | Crescimento Capilar Natural',
-  description: 'Acabe com a queda de cabelo! Biocapilar com 9 ingredientes poderosos para crescimento capilar natural. Resultados em poucas semanas. Garantia 30 dias. Frete grátis!',
-  keywords: 'queda de cabelo, crescimento capilar, calvície, entradas, falhas, biotina, vitaminas cabelo, tratamento capilar, Biocapilar, cabelos fortes, densidade capilar, saúde capilar, suplemento cabelo, crescimento natural, anti-queda',
-  authors: [{ name: 'Biocapilar' }],
-  creator: 'Biocapilar',
-  publisher: 'Biocapilar',
+  title: 'Phynamax - Emagreça de Forma Saudável | Perda de Peso Natural',
+  description: 'Emagreça de forma saudável com Phynamax! 6 ingredientes poderosos para perda de peso natural. Reduz fome, acelera metabolismo. Garantia 30 dias. Frete grátis!',
+  keywords: 'emagrecimento, perda de peso, queima de gordura, metabolismo, saciedade, Phynamax, emagrecer, dieta, suplemento emagrecimento, fibras, termogênico, queima calorias, emagrecimento saudável, redução de peso',
+  authors: [{ name: 'Phynamax' }],
+  creator: 'Phynamax',
+  publisher: 'Phynamax',
   formatDetection: {
     email: false,
     address: false,
@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Biocapilar - Acabe com a Queda de Cabelo',
-    description: 'Acabe com a queda de cabelo! Biocapilar com 9 ingredientes poderosos para crescimento capilar natural. Resultados em poucas semanas. Garantia 30 dias.',
+    title: 'Phynamax - Emagreça de Forma Saudável',
+    description: 'Emagreça de forma saudável com Phynamax! 6 ingredientes poderosos para perda de peso natural. Reduz fome, acelera metabolismo. Garantia 30 dias.',
     url: 'https://lskinderm.com',
-    siteName: 'Biocapilar - Crescimento Capilar',
+    siteName: 'Phynamax - Emagrecimento Saudável',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Biocapilar - Suplemento para Crescimento Capilar Natural',
+        alt: 'Phynamax - Suplemento para Emagrecimento Saudável',
       },
     ],
     locale: 'pt_BR',
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Biocapilar - Acabe com a Queda de Cabelo',
-    description: 'Acabe com a queda de cabelo! Biocapilar com 9 ingredientes poderosos para crescimento capilar natural. Resultados em poucas semanas.',
+    title: 'Phynamax - Emagreça de Forma Saudável',
+    description: 'Emagreça de forma saudável com Phynamax! 6 ingredientes poderosos para perda de peso natural. Reduz fome, acelera metabolismo.',
     images: ['/images/og-image.jpg'],
   },
   robots: {
@@ -63,6 +63,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        {/* Favicon */}
+        <link rel="icon" href="/images/fphyna.png" />
+        <link rel="shortcut icon" href="/images/fphyna.png" />
+        <link rel="apple-touch-icon" href="/images/fphyna.png" />
+        
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEJ71JEFEM"></script>
         <script

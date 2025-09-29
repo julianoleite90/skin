@@ -20,7 +20,7 @@ export default function Features() {
           carouselRef.current.scrollLeft = 0
         }
       }
-    }, 30)
+    }, 50)
 
     return () => clearInterval(interval)
   }, [isDragging])
@@ -39,13 +39,6 @@ export default function Features() {
     setIsDragging(false)
   }
 
-  const handleMouseEnter = () => {
-    setIsDragging(true) // Pause auto-scroll on hover
-  }
-
-  const handleMouseLeaveResume = () => {
-    setIsDragging(false) // Resume auto-scroll when not hovering
-  }
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging || !carouselRef.current) return
@@ -79,10 +72,10 @@ export default function Features() {
         {/* Header */}
         <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          O seu melhor aliado. Resultados que transformam a autoestima!
+          O seu melhor aliado na perda de peso. Resultados que transformam a autoestima!
         </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Recebemos depoimentos incríveis todos os dias: histórias de pessoas que interromperam a queda, preencheram as falhas e recuperaram a confiança.
+            Recebemos depoimentos incríveis todos os dias: histórias de pessoas que emagreceram, e desfrutam de uma vida mais saudável.
           </p>
         </div>
 
@@ -92,8 +85,6 @@ export default function Features() {
             ref={carouselRef}
             className="flex overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing"
             onMouseDown={handleMouseDown}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeaveResume}
             onMouseUp={handleMouseUp}
             onMouseMove={handleMouseMove}
             onTouchStart={handleTouchStart}
@@ -106,63 +97,63 @@ export default function Features() {
               <img
                 src="/images/d1.png"
                 alt="Depoimento 1"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d5.png"
                 alt="Depoimento 5"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d2.png"
                 alt="Depoimento 2"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d4.png"
                 alt="Depoimento 4"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d3.png"
                 alt="Depoimento 3"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d6.png"
                 alt="Depoimento 6"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
               {/* Second set for seamless loop */}
               <img
                 src="/images/d1.png"
                 alt="Depoimento 1"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d5.png"
                 alt="Depoimento 5"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d2.png"
                 alt="Depoimento 2"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d4.png"
                 alt="Depoimento 4"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d3.png"
                 alt="Depoimento 3"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d6.png"
                 alt="Depoimento 6"
-                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
+                className="h-72 md:h-72 w-auto object-contain flex-shrink-0"
               />
             </div>
           </div>
@@ -179,11 +170,11 @@ export default function Features() {
                     <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                    <div className="absolute -top-0.5 -right-0.5 w-2 h-2 md:w-4 md:h-4 bg-white rounded-full"></div>
+                    <div className="absolute -top-0.5 -right-0.5 w-2 h-2 md:w-4 md:h-4 bg-pink-400 rounded-full"></div>
               </div>
               <div className="flex-1">
-                <p className="text-xs md:text-sm text-gray-600">COMPRA SEGURA E</p>
-                <p className="text-sm md:text-base font-bold text-gray-800">COM GARANTIA</p>
+                <p className="text-xs md:text-sm text-gray-600">COMPRA SEGURA</p>
+                <p className="text-sm md:text-base font-bold text-gray-800">30 DIAS GARANTIA</p>
               </div>
             </div>
 
@@ -195,11 +186,11 @@ export default function Features() {
                     <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" />
                   </svg>
                 </div>
-                    <div className="absolute -top-0.5 -right-0.5 w-2 h-2 md:w-4 md:h-4 bg-white rounded-full"></div>
+                    <div className="absolute -top-0.5 -right-0.5 w-2 h-2 md:w-4 md:h-4 bg-pink-400 rounded-full"></div>
               </div>
               <div className="flex-1">
-                <p className="text-xs md:text-sm text-gray-600">PAGAMENTO EM PIX</p>
-                <p className="text-sm md:text-base font-bold text-gray-800">COM DESCONTO</p>
+                <p className="text-xs md:text-sm text-gray-600">DESCONTO NO PIX</p>
+                <p className="text-sm md:text-base font-bold text-gray-800">10% DE DESCONTO</p>
               </div>
             </div>
 
@@ -211,11 +202,11 @@ export default function Features() {
                     <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2h12v8H4V6z" />
                   </svg>
                 </div>
-                    <div className="absolute -top-0.5 -right-0.5 w-2 h-2 md:w-4 md:h-4 bg-white rounded-full"></div>
+                    <div className="absolute -top-0.5 -right-0.5 w-2 h-2 md:w-4 md:h-4 bg-pink-400 rounded-full"></div>
               </div>
               <div className="flex-1">
                 <p className="text-xs md:text-sm text-gray-600">PARCELAMENTO</p>
-                <p className="text-sm md:text-base font-bold text-gray-800">EM ATÉ 12X</p>
+                <p className="text-sm md:text-base font-bold text-gray-800">ATÉ 12X s/ JUROS</p>
               </div>
             </div>
 
@@ -228,11 +219,11 @@ export default function Features() {
                     <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1V8a1 1 0 00-1-1h-3z" />
                   </svg>
                 </div>
-                    <div className="absolute -top-0.5 -right-0.5 w-2 h-2 md:w-4 md:h-4 bg-white rounded-full"></div>
+                    <div className="absolute -top-0.5 -right-0.5 w-2 h-2 md:w-4 md:h-4 bg-pink-400 rounded-full"></div>
               </div>
               <div className="flex-1">
-                <p className="text-xs md:text-sm text-gray-600">FRETE GRÁTIS PARA</p>
-                <p className="text-sm md:text-base font-bold text-gray-800">TODO O BRASIL</p>
+                <p className="text-xs md:text-sm text-gray-600">FRETE GRÁTIS</p>
+                <p className="text-sm md:text-base font-bold text-gray-800">ENVIO IMEDIATO</p>
               </div>
             </div>
           </div>

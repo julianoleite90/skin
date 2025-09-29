@@ -4,7 +4,7 @@ import Features from '@/components/Features'
 import Testimonials from '@/components/Testimonials'
 import Kits from '@/components/Kits'
 import Pricing from '@/components/Pricing'
-import Treatment from '@/components/Treatment'
+import TreatmentRemarketing from '@/components/TreatmentRemarketing'
 import Guarantee from '@/components/Guarantee'
 import BeforeAfter from '@/components/BeforeAfter'
 import FAQ from '@/components/FAQ'
@@ -137,7 +137,7 @@ const breadcrumbSchema = {
   ]
 }
 
-export default function Home() {
+export default function RemarketingGoogle() {
   return (
     <main className="min-h-screen">
       <JsonLd data={productSchema} />
@@ -150,7 +150,7 @@ export default function Home() {
       <Testimonials />
       <Kits />
       <Pricing />
-      <Treatment />
+      <TreatmentRemarketing />
       <Guarantee />
       <Reviews />
       <FAQ />

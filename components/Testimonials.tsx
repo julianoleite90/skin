@@ -117,10 +117,10 @@ export default function Testimonials() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Recomendado por especialistas em tricologia
+            Recomendado por especialistas
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Especialistas recomendam Biocapilar por sua capacidade de estimular a produção de novos fios em 71% e diminuir a queda em 86%.
+            As fibras alimentares do Phynamax aumentam a saciedade em até 30%, reduzindo a fome de forma eficaz, e controlando o apetite.
           </p>
         </div>
 
@@ -131,14 +131,18 @@ export default function Testimonials() {
             {/* Title and Subtitle */}
             <div className="mb-4 -mt-6 mt-4 md:mt-24">
               <h2 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
-                Um boost de vitalidade diretamente nos cabelos
+                Um organismo regulado queima até 47% mais calorias
               </h2>
               <p className="text-xl text-gray-600">
-                Biocapilar estimula até 71% mais o crescimento capilar com ingredientes ativos, promovendo fios mais fortes, densos e saudáveis.
+                A fórmula do Phynamax regula o organismo em poucos dias, acelerando a queima de gordura e mantendo a fome sob controle!
               </p>
               
               <p className="text-xl text-gray-600 mt-4">
-                Enriquecido com nutrientes essenciais, atua profundamente no couro cabeludo, reduzindo a queda, estimulando novos fios e melhorando a textura dos cabelos, promovendo cabelos mais fortes, preenchidos e totalmente saudáveis.
+                As fibras poderosas de alto impacto transformam seu intestino em uma máquina de queima calórica, disparando o metabolismo em até 27% com a produção de ácidos graxos que incineram calorias.
+              </p>
+              
+              <p className="text-xl text-gray-600 mt-4">
+                Os antioxidantes, maximizam a energia e equilibram hormônios como a leptina, eliminando a fome excessiva e acelerando o emagrecimento.
               </p>
 
               {/* CTA Button */}
@@ -148,11 +152,17 @@ export default function Testimonials() {
                     const kitsSection = document.getElementById('kits');
                     if (kitsSection) {
                       kitsSection.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                      // Fallback: scroll to treatment section
+                      const treatmentSection = document.getElementById('treatment');
+                      if (treatmentSection) {
+                        treatmentSection.scrollIntoView({ behavior: 'smooth' });
+                      }
                     }
                   }}
                   className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white font-semibold py-4 px-20 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
                 >
-                  COMPRAR AGORA
+                  EU QUERO EXPERIMENTAR
                 </button>
               </div>
             </div>

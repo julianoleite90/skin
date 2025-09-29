@@ -8,14 +8,14 @@ export default function Footer() {
             {/* Column 1 - Logo and Company Message */}
             <div className="space-y-6 text-center md:text-left">
               <img 
-                src="/images/logo-biocapilar.png" 
-                alt="Biocapilar Logo" 
+                src="/images/logo-rosa-phynamax.png" 
+                alt="Phynamax Logo" 
                 className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-contain mx-auto md:mx-0"
               />
               <p className="text-base md:text-lg text-gray-600 leading-relaxed px-4 md:px-0">
-                Transforme sua saúde capilar com o Biocapilar. 
-                Tecnologia avançada para resultados visíveis 
-                em poucas semanas!
+                Transforme sua saúde com o Phynamax. 
+                Tecnologia avançada para emagrecimento 
+                saudável em poucas semanas!
               </p>
             </div>
 
@@ -81,7 +81,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-200 py-4 text-center">
           <p className="text-gray-600 text-sm">
-            © 2025 Biocapilar - Todos os direitos reservados.
+            © 2025 Phynamax - Todos os direitos reservados.
           </p>
         </div>
       </div>

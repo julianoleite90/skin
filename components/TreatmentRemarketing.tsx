@@ -4,7 +4,7 @@ import { useState } from 'react'
 import StockCheckPopup from './StockCheckPopup'
 import { useGeolocation } from '@/hooks/useGeolocation'
 
-export default function Treatment() {
+export default function TreatmentRemarketing() {
   const [showPopup, setShowPopup] = useState(false)
   const [selectedKit, setSelectedKit] = useState<'1' | '3' | '5'>('1')
   const { location } = useGeolocation()
@@ -20,9 +20,9 @@ export default function Treatment() {
     // Aguardar um pouco e redirecionar
     setTimeout(() => {
       const urls = {
-        '1': 'https://full.sale/eANTht?src=site-oficial',
-        '3': 'https://full.sale/k0E9wK?src=site-oficial',
-        '5': 'https://full.sale/8mYNoQ'
+        '1': 'https://full.sale/eANTht?src=rmkt-google',
+        '3': 'https://full.sale/k0E9wK?src=rmkt-google',
+        '5': 'https://full.sale/8mYNoQ?src=rmkt-google'
       }
       window.location.href = urls[selectedKit]
     }, 100)

@@ -312,7 +312,7 @@ export default function RastreioPage() {
                           </p>
                           {step.id === 8 && (
                             <p className="text-sm text-green-600 font-medium mt-6 pt-4 border-t border-gray-200">
-                              Em breve você receberá o seu Antiflacidez :)
+                              Em breve você receberá o seu Phyanamax :)
                             </p>
                           )}
                         </div>

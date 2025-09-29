@@ -9,12 +9,12 @@ export default function Reviews() {
   const reviews = [
     {
       id: 1,
-      name: "Carlos",
-      lastName: "Silva",
-      city: "São Paulo, SP",
+      name: "Ana",
+      lastName: "Costa",
+      city: "Rio de Janeiro, RJ",
       rating: 5,
-      text: "Produto incrível! Em apenas 3 semanas já vejo novos fios nascendo nas minhas entradas. A queda parou completamente e as falhas estão preenchendo. Recomendo para todos os homens!",
-      image: "/images/depoimento1.png",
+      text: "Produto incrível! Em apenas 3 semanas já vejo resultados na perda de peso. A fome diminuiu e estou perdendo peso de forma saudável. Recomendo para todas as mulheres!",
+      image: "/images/r1.png",
       likes: 12,
       dislikes: 0,
       verified: true,
@@ -24,12 +24,12 @@ export default function Reviews() {
     },
     {
       id: 2,
-      name: "Ana",
-      lastName: "Costa",
-      city: "Rio de Janeiro, RJ",
+      name: "Patricia",
+      lastName: "Lima",
+      city: "Porto Alegre, RS",
       rating: 5,
-      text: "Estou usando há 1 mês e os resultados são impressionantes. Minhas falhas estão preenchidas e meus cabelos estão mais densos e fortes. Vale cada centavo investido!",
-      image: "/images/depoimento2.png",
+      text: "Estou usando há 1 mês e os resultados são impressionantes. Perdi 5kg e me sinto muito mais disposta. Vale cada centavo investido!",
+      image: "/images/r2.png",
       likes: 8,
       dislikes: 1,
       verified: true,
@@ -39,12 +39,12 @@ export default function Reviews() {
     },
     {
       id: 3,
-      name: "Roberto",
-      lastName: "Mendes",
-      city: "Belo Horizonte, MG",
+      name: "Fernanda",
+      lastName: "Santos",
+      city: "Salvador, BA",
       rating: 4,
-      text: "Produto de qualidade excepcional. Minhas entradas diminuíram muito e os cabelos estão mais resistentes. Estou muito satisfeito com a compra!",
-      image: null,
+      text: "Produto de qualidade excepcional. Minha fome diminuiu muito e estou perdendo peso de forma consistente. Estou muito satisfeita com a compra!",
+      image: "/images/r3.png",
       likes: 15,
       dislikes: 0,
       verified: true,
@@ -54,12 +54,12 @@ export default function Reviews() {
     },
     {
       id: 4,
-      name: "Patricia",
-      lastName: "Lima",
-      city: "Porto Alegre, RS",
+      name: "Juliana",
+      lastName: "Oliveira",
+      city: "Brasília, DF",
       rating: 5,
-      text: "Finalmente encontrei um produto que realmente funciona! Minhas falhas estão preenchidas e as entradas diminuíram consideravelmente. Recomendo!",
-      image: null,
+      text: "Finalmente encontrei um produto que realmente funciona! Perdi 7kg em 6 semanas e me sinto muito melhor. Recomendo!",
+      image: "/images/r4.png",
       likes: 20,
       dislikes: 2,
       verified: true,
@@ -69,12 +69,12 @@ export default function Reviews() {
     },
     {
       id: 5,
-      name: "Fernanda",
-      lastName: "Santos",
-      city: "Salvador, BA",
+      name: "Carlos",
+      lastName: "Silva",
+      city: "São Paulo, SP",
       rating: 5,
-      text: "Comecei a usar preventivamente e já vejo resultados incríveis. A queda parou e novos fios estão nascendo nas áreas mais afetadas. Excelente produto!",
-      image: null,
+      text: "Comecei a usar e já vejo resultados incríveis. A fome diminuiu e estou perdendo peso de forma saudável. Excelente produto!",
+      image: "/images/r5.png",
       likes: 7,
       dislikes: 0,
       verified: true,
@@ -84,11 +84,11 @@ export default function Reviews() {
     },
     {
       id: 6,
-      name: "Juliana",
-      lastName: "Oliveira",
-      city: "Brasília, DF",
+      name: "Roberto",
+      lastName: "Mendes",
+      city: "Belo Horizonte, MG",
       rating: 4,
-      text: "Produto muito bom! Minhas entradas estão preenchidas e os cabelos estão mais densos. Uso há 3 semanas e já vejo resultados. Recomendo!",
+      text: "Produto muito bom! Estou perdendo peso de forma consistente e me sinto mais disposto. Uso há 3 semanas e já vejo resultados. Recomendo!",
       image: null,
       likes: 11,
       dislikes: 1,
@@ -130,7 +130,7 @@ export default function Reviews() {
         {/* Header with Amazon-style rating summary */}
         <div className="mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
-            Avaliações de clientes
+            Comentários recentes
           </h2>
           
           {/* Rating Summary */}
@@ -299,7 +299,7 @@ export default function Reviews() {
       )}
       
       {/* Gradient separator line */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pink-400 to-transparent"></div>
     </section>
   )
 }
