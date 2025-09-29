@@ -24,11 +24,12 @@ export default function Kits() {
           <div className="w-full max-w-2xl">
             <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://player.vimeo.com/video/1122908638?autoplay=1&muted=1&loop=1&controls=0&responsive=1&portrait=0&title=0&byline=0&badge=0&background=0"
+                src="https://player.vimeo.com/video/1122908638?autoplay=1&muted=1&loop=1&controls=0&responsive=1&portrait=0&title=0&byline=0&badge=0&background=0&playsinline=1"
                 className="absolute top-0 left-0 w-full h-full rounded-lg"
                 style={{ border: 'none' }}
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
+                playsInline
               ></iframe>
             </div>
           </div>
@@ -104,11 +105,12 @@ export default function Kits() {
             <div className="w-full max-w-xl">
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
-                  src="https://player.vimeo.com/video/1122908638?autoplay=1&muted=1&loop=1&controls=0&responsive=1&portrait=0&title=0&byline=0&badge=0&background=0"
+                  src="https://player.vimeo.com/video/1122908638?autoplay=1&muted=1&loop=1&controls=0&responsive=1&portrait=0&title=0&byline=0&badge=0&background=0&playsinline=1"
                   className="absolute top-0 left-0 w-full h-full rounded-lg"
                   style={{ border: 'none' }}
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
+                  playsInline
                 ></iframe>
               </div>
             </div>
