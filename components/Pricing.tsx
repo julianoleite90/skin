@@ -159,7 +159,7 @@ export default function Pricing() {
   }, [])
 
   return (
-    <section id="precos" className="section-padding bg-white relative">
+    <section id="precos" className="section-padding bg-white relative hidden">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">

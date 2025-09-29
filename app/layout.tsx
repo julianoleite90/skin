@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'L Skin Derm - Anti-flacidez facial | Tratamento Profissional',
-  description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias. Frete grátis!',
-  keywords: 'antiflacidez facial, flacidez, lifting facial, rugas, linhas de expressão, pele firme, tratamento facial, hot mode, cold mode, L Skin Derm, massageador facial, colágeno, elastina, rejuvenescimento, beleza, estética, skincare, anti-aging',
-  authors: [{ name: 'L Skin Derm' }],
-  creator: 'L Skin Derm',
-  publisher: 'L Skin Derm',
+  title: 'Biocapilar - Acabe com a Queda de Cabelo | Crescimento Capilar Natural',
+  description: 'Acabe com a queda de cabelo! Biocapilar com 9 ingredientes poderosos para crescimento capilar natural. Resultados em poucas semanas. Garantia 30 dias. Frete grátis!',
+  keywords: 'queda de cabelo, crescimento capilar, calvície, entradas, falhas, biotina, vitaminas cabelo, tratamento capilar, Biocapilar, cabelos fortes, densidade capilar, saúde capilar, suplemento cabelo, crescimento natural, anti-queda',
+  authors: [{ name: 'Biocapilar' }],
+  creator: 'Biocapilar',
+  publisher: 'Biocapilar',
   formatDetection: {
     email: false,
     address: false,
@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'L Skin Derm - Anti-flacidez facial',
-    description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias.',
+    title: 'Biocapilar - Acabe com a Queda de Cabelo',
+    description: 'Acabe com a queda de cabelo! Biocapilar com 9 ingredientes poderosos para crescimento capilar natural. Resultados em poucas semanas. Garantia 30 dias.',
     url: 'https://lskinderm.com',
-    siteName: 'L Skin Derm Anti-flacidez',
+    siteName: 'Biocapilar - Crescimento Capilar',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Antiflacidez Facial L Skin Derm - Tratamento Profissional',
+        alt: 'Biocapilar - Suplemento para Crescimento Capilar Natural',
       },
     ],
     locale: 'pt_BR',
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'L Skin Derm - Anti-flacidez facial',
-    description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia.',
+    title: 'Biocapilar - Acabe com a Queda de Cabelo',
+    description: 'Acabe com a queda de cabelo! Biocapilar com 9 ingredientes poderosos para crescimento capilar natural. Resultados em poucas semanas.',
     images: ['/images/og-image.jpg'],
   },
   robots: {

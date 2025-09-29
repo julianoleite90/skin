@@ -64,10 +64,10 @@ export default function BeforeAfter() {
         {/* Header */}
         <div className="text-center mb-4 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Pele Renovada
+            Transformação completa
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Efeito lifting que rejuvenesce e restaura a elasticidade da pele com resultados visíveis.
+            Milhares de novos fios toda semana! Acabe com as falhas e entradas.
           </p>
         </div>
 
@@ -77,13 +77,13 @@ export default function BeforeAfter() {
           <div className="space-y-6 order-2 md:order-1">
             <div className="text-center md:text-left">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Efeito botox em casa
+                Menos queda, mais cabelos!
               </h3>
               <p className="text-lg text-gray-600 mb-6">
-                L Skin Derm estimula a produção de colágeno na pele por meio da massagem com microcorrentes, promovendo firmeza e um rejuvenescimento visível e instantâneo.
+                Biocapilar estimula o crescimento de novos fios por meio da nutrição adequada do organismo, promovendo fios mais fortes e resistentes.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Firmeza e juventude sem agulhas!
+                Cabelos mais densos, sem cirurgia!
               </p>
             </div>
 
@@ -98,14 +98,14 @@ export default function BeforeAfter() {
                 }}
                 className="w-full md:w-auto bg-gradient-to-r from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 text-lg inline-block text-center"
               >
-                EU QUERO A PELE MAIS FIRME
+                EU QUERO CABELOS MAIS FORTES
               </button>
             </div>
           </div>
 
           {/* Right Column - Before/After Image Comparison */}
           <div className="order-1 md:order-2">
-            <div className="relative max-w-sm mx-auto">
+            <div className="relative max-w-md md:max-w-lg mx-auto">
               {/* Image Container */}
               <div 
                 ref={containerRef}

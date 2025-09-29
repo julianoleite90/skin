@@ -117,10 +117,10 @@ export default function Testimonials() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Recomendado por especialistas em dermatologia
+            Recomendado por especialistas em tricologia
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Especialistas recomendam L Skin Derm por sua capacidade de estimular a produção de colágeno em até 30%.
+            Especialistas recomendam Biocapilar por sua capacidade de estimular a produção de novos fios em 71% e diminuir a queda em 86%.
           </p>
         </div>
 
@@ -131,15 +131,30 @@ export default function Testimonials() {
             {/* Title and Subtitle */}
             <div className="mb-4 -mt-6 mt-4 md:mt-24">
               <h2 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
-                Um boost de colágeno diretamente na pele
+                Um boost de vitalidade diretamente nos cabelos
               </h2>
               <p className="text-xl text-gray-600">
-                L Skin Derm estimula até 30% mais colágeno na pele por meio da massagem com microcorrentes, promovendo firmeza e rejuvenescimento visível.
+                Biocapilar estimula até 71% mais o crescimento capilar com ingredientes ativos, promovendo fios mais fortes, densos e saudáveis.
               </p>
               
               <p className="text-xl text-gray-600 mt-4">
-                O sérum anti-idade, enriquecido com retinol, atua profundamente, renovando a pele, reduzindo rugas e melhorando a textura.
+                Enriquecido com nutrientes essenciais, atua profundamente no couro cabeludo, reduzindo a queda, estimulando novos fios e melhorando a textura dos cabelos, promovendo cabelos mais fortes, preenchidos e totalmente saudáveis.
               </p>
+
+              {/* CTA Button */}
+              <div className="flex justify-center md:justify-start pt-12 lg:pt-16">
+                <button 
+                  onClick={() => {
+                    const kitsSection = document.getElementById('kits');
+                    if (kitsSection) {
+                      kitsSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white font-semibold py-4 px-20 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
+                >
+                  COMPRAR AGORA
+                </button>
+              </div>
             </div>
 
 
@@ -150,7 +165,7 @@ export default function Testimonials() {
             <img 
               src="/images/hot.png" 
               alt="Massageador L&L Skin" 
-              className="w-80 h-80 md:w-[500px] md:h-[500px] object-contain md:mb-0 md:translate-y-16 md:-mt-16"
+              className="w-[500px] h-[500px] md:w-[600px] md:h-[600px] object-contain md:mb-0 md:translate-y-16 md:-mt-16"
             />
           </div>
         </div>

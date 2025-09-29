@@ -15,12 +15,12 @@ import JsonLd from '@/components/JsonLd'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'L Skin Derm - Anti-flacidez facial | Tratamento Profissional',
-  description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias. Frete grátis!',
-  keywords: 'antiflacidez facial, flacidez, lifting facial, rugas, linhas de expressão, pele firme, tratamento facial, hot mode, cold mode, L Skin Derm, massageador facial, colágeno, elastina, rejuvenescimento, beleza, estética, skincare, anti-aging',
+  title: 'Biocapilar - Acabe com a Queda de Cabelo | Crescimento Capilar Natural',
+  description: 'Acabe com a queda de cabelo! Biocapilar com 9 ingredientes poderosos para crescimento capilar natural. Resultados em poucas semanas. Garantia 30 dias. Frete grátis!',
+  keywords: 'queda de cabelo, crescimento capilar, calvície, entradas, falhas, biotina, vitaminas cabelo, tratamento capilar, Biocapilar, cabelos fortes, densidade capilar, saúde capilar, suplemento cabelo, crescimento natural, anti-queda',
   openGraph: {
-    title: 'L Skin Derm - Anti-flacidez facial',
-    description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia. Garantia 180 dias.',
+    title: 'Biocapilar - Acabe com a Queda de Cabelo',
+    description: 'Acabe com a queda de cabelo! Biocapilar com 9 ingredientes poderosos para crescimento capilar natural. Resultados em poucas semanas. Garantia 30 dias.',
     images: ['/images/og-image.jpg'],
   },
 }
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Antiflacidez Facial L Skin Derm",
-  "description": "Massageador facial com tecnologia hot/cold mode para combater flacidez, rugas e linhas de expressão. Resultados em 15 minutos por dia.",
+  "name": "Biocapilar - Suplemento para Crescimento Capilar",
+  "description": "Suplemento com 9 ingredientes poderosos para acabar com a queda de cabelo e estimular o crescimento capilar natural. Resultados em poucas semanas.",
   "image": [
     "https://lskinderm.com/images/2-min.png",
     "https://lskinderm.com/images/hot.png",
@@ -37,18 +37,18 @@ const productSchema = {
   ],
   "brand": {
     "@type": "Brand",
-    "name": "L Skin Derm"
+    "name": "Biocapilar"
   },
-  "category": "Beleza e Estética",
+  "category": "Saúde e Bem-estar",
   "offers": {
     "@type": "Offer",
-    "price": "88.25",
+    "price": "257.20",
     "priceCurrency": "BRL",
     "priceValidUntil": "2025-12-31",
     "availability": "https://schema.org/InStock",
     "seller": {
       "@type": "Organization",
-      "name": "L Skin Derm"
+      "name": "Biocapilar"
     },
     "shippingDetails": {
       "@type": "OfferShippingDetails",
@@ -89,13 +89,13 @@ const productSchema = {
       "@type": "Review",
       "author": {
         "@type": "Person",
-        "name": "Maria Silva"
+        "name": "Carlos Silva"
       },
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": "5"
       },
-      "reviewBody": "Produto fantástico! Minha pele está mais firme e com um brilho natural que não tinha há anos."
+      "reviewBody": "Produto incrível! Em apenas 3 semanas já vejo novos fios nascendo nas minhas entradas. A queda parou completamente!"
     }
   ]
 }
@@ -103,9 +103,9 @@ const productSchema = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "L Skin Derm",
+  "name": "Biocapilar",
   "url": "https://lskinderm.com",
-  "logo": "https://lskinderm.com/images/logo-skinderm.png",
+  "logo": "https://lskinderm.com/images/logo-biocapilar.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+55-41-98454-9172",
@@ -119,8 +119,8 @@ const organizationSchema = {
     "addressCountry": "BR"
   },
   "sameAs": [
-    "https://www.instagram.com/antiflacidez",
-    "https://www.facebook.com/antiflacidez"
+    "https://www.instagram.com/biocapilar",
+    "https://www.facebook.com/biocapilar"
   ]
 }
 

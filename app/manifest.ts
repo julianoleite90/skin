@@ -2,13 +2,13 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'L Skin Derm Anti-flacidez - Tratamento Facial Profissional',
-    short_name: 'Antiflacidez L&L',
-    description: 'Acabe com a flacidez facial! L Skin Derm Anti-flacidez com tecnologia hot/cold mode. Resultados em 15 minutos/dia.',
+    name: 'Biocapilar - Acabe com a Queda de Cabelo | Crescimento Capilar Natural',
+    short_name: 'Biocapilar',
+    description: 'Acabe com a queda de cabelo! Biocapilar com 9 ingredientes poderosos para crescimento capilar natural. Resultados em poucas semanas.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
-    theme_color: '#f59e0b',
+    theme_color: '#16a34a',
     icons: [
       {
         src: '/images/icon-192.png',
@@ -21,7 +21,7 @@ export default function manifest(): MetadataRoute.Manifest {
         type: 'image/png',
       },
     ],
-    categories: ['beauty', 'health', 'lifestyle'],
+    categories: ['health', 'beauty', 'lifestyle'],
     lang: 'pt-BR',
   }
 }

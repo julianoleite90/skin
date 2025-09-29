@@ -1,6 +1,9 @@
 "use client"
 
+import { useState } from 'react'
+
 export default function Kits() {
+  const [showAllIngredients, setShowAllIngredients] = useState(false)
   return (
     <section id="kits" className="py-8 md:py-16 px-4 sm:px-6 lg:px-8 bg-gray-200 relative">
       {/* Linha de separação com gradiente prateado */}
@@ -13,27 +16,44 @@ export default function Kits() {
             Como funciona
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Apenas 15 minutos por dia para transformar sua pele com um rejuvenescimento poderoso.
+            Simples e eficaz! Tome 2 cápsulas por dia, 30 minutos antes das refeições, com um copo d'água. Encaixa fácil na sua rotina.
           </p>
           <div className="text-xl text-gray-600 max-w-3xl mx-auto text-left">
-            {/* Video - Mobile only */}
-            <div className="flex justify-center mb-6 md:hidden">
-              <div className="w-full max-w-md aspect-video">
-                <iframe
-                  src="https://player.vimeo.com/video/1122343689?autoplay=1&loop=1&muted=1&controls=0&background=1&autopause=0&playsinline=1"
-                  className="w-full h-full rounded-lg"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  title="L Skin Derm em ação"
-                ></iframe>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Resultados que impressionam:</h3>
+            
+            <ul className="space-y-4 text-lg">
+              <li className="flex items-start space-x-3">
+                <img src="/images/foliculo.png" alt="Folículo" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
+                <div>
+                  <strong>Em poucos dias:</strong> A queda diminui drasticamente! Graças à ação antioxidante e à melhora da circulação no couro cabeludo, seus fios ficam mais resistentes e com brilho natural.
+                </div>
+              </li>
+
+              <li className="flex items-start space-x-3">
+                <img src="/images/foliculo.png" alt="Folículo" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
+                <div>
+                  <strong>Em 3-4 semanas:</strong> Veja novos fios nascendo e seus cabelos mais densos! Ingredientes como biotina e zinco turbinam a produção de queratina, fortalecem folículos e bloqueiam o DHT, o vilão da calvície.
+                </div>
+              </li>
+
+              <li className="flex items-start space-x-3">
+                <img src="/images/foliculo.png" alt="Folículo" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
+                <div>
+                  <strong>Após 90 dias:</strong> Cabelos volumosos, saudáveis e vibrantes! A combinação de vitaminas e minerais hidrata, protege e acelera o crescimento, transformando seu visual.
+                </div>
+              </li>
+            </ul>
               </div>
             </div>
-            <strong>Passo 1:</strong> Aplique o sérum uniformemente no rosto ou pescoço para uma hidratação profunda.<br />
-            <br />
-            <strong>Passo 2:</strong> Utilize o massageador L Skin Derm, massageando por 5 minutos no modo quente para estimular a circulação.<br />
-            <br />
-            <strong>Passo 3:</strong> Finalize com 8 minutos no modo frio, tonificando e firmando a pele com precisão.
+
+        {/* Image - Mobile only (above content) */}
+        <div className="md:hidden flex justify-center mb-8">
+          <div className="w-full max-w-2xl">
+            <img
+              src="/images/foliculos.png"
+              alt="Folículos capilares"
+              className="w-full h-auto rounded-lg object-contain"
+            />
           </div>
         </div>
 
@@ -42,69 +62,88 @@ export default function Kits() {
           {/* Left Column - Text */}
           <div className="space-y-6 order-1 md:order-1">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-              Efeito lifiting 6 em 1
+              A fórmula mais eficaz para os cabelos
             </h3>
             
-            <div className="space-y-3">
-              <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded-lg">
-                <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <img src="/images/9.png" alt="Testa" className="w-20 h-20 rounded-full object-cover" />
-                </div>
+            <ul className="space-y-4 text-lg">
+              {/* Primeiros 4 ingredientes sempre visíveis */}
+              <li className="flex items-start space-x-3">
+                <img src="/images/foliculo.png" alt="Nicotinamida" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Testa</h4>
-                  <p className="text-gray-600">Reduz linhas horizontais e rugas de expressão.</p>
+                  <strong>Nicotinamida (Vitamina B3):</strong> Protege folículos com ação antioxidante, melhora a circulação e reduz inflamações, promovendo cabelos fortes e saudáveis.
                 </div>
-              </div>
+              </li>
 
-              <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded-lg">
-                <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <img src="/images/10.png" alt="Área dos olhos" className="w-20 h-20 rounded-full object-cover" />
-                </div>
+              <li className="flex items-start space-x-3">
+                <img src="/images/foliculo.png" alt="D-Pantotenato de Cálcio" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Área dos olhos</h4>
-                  <p className="text-gray-600">Diminui pés de galinha e bolsas sob os olhos.</p>
+                  <strong>D-Pantotenato de Cálcio (Vitamina B5):</strong> Fortalece fios, estimula a queratina e hidrata o couro cabeludo, combatendo a queda.
                 </div>
-              </div>
+              </li>
 
-              <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded-lg">
-                <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <img src="/images/11.png" alt="Bochechas" className="w-20 h-20 rounded-full object-cover" />
-                </div>
+              <li className="flex items-start space-x-3">
+                <img src="/images/foliculo.png" alt="Cloridrato de Piridoxina" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Bochechas</h4>
-                  <p className="text-gray-600">Combate a flacidez e melhora a elasticidade.</p>
+                  <strong>Cloridrato de Piridoxina (Vitamina B6):</strong> Regula o sebo, fortalece folículos e acelera o crescimento de novos fios.
                 </div>
-              </div>
+              </li>
 
-              <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded-lg">
-                <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <img src="/images/12.png" alt="Bigode chinês" className="w-20 h-20 rounded-full object-cover" />
-                </div>
+              <li className="flex items-start space-x-3">
+                <img src="/images/foliculo.png" alt="D-Biotina" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Bigode chinês</h4>
-                  <p className="text-gray-600">Suaviza os sulcos nasolabiais para um visual mais jovem.</p>
+                  <strong>D-Biotina (Vitamina B7):</strong> Estimula o crescimento, reforça a queratina e reduz a quebra, para cabelos densos.
                 </div>
-              </div>
+              </li>
 
-              <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded-lg">
-                <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <img src="/images/13.png" alt="Queixo e mandíbula" className="w-20 h-20 rounded-full object-cover" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Queixo e mandíbula</h4>
-                  <p className="text-gray-600">Define o contorno facial e reduz o "queixo duplo".</p>
-                </div>
+              {/* Ingredientes adicionais - só aparecem quando showAllIngredients for true */}
+              {showAllIngredients && (
+                <>
+                  <li className="flex items-start space-x-3">
+                    <img src="/images/foliculo.png" alt="Zinco" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
+                    <div>
+                      <strong>Zinco:</strong> Bloqueia o DHT, fortalece folículos e reduz inflamações, prevenindo a calvície.
               </div>
+                  </li>
 
-              <div className="flex items-start space-x-3 p-3 bg-gray-50 rounded-lg">
-                <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <img src="/images/pescoco.png" alt="Pescoço" className="w-20 h-20 rounded-full object-cover" />
+                  <li className="flex items-start space-x-3">
+                    <img src="/images/foliculo.png" alt="Sulfato Cúprico" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
+                    <div>
+                      <strong>Sulfato Cúprico (Cobre):</strong> Fortalece folículos, estimula colágeno e mantém a cor natural dos fios.
                 </div>
+                  </li>
+
+                  <li className="flex items-start space-x-3">
+                    <img src="/images/foliculo.png" alt="Acetato de Retinila" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Pescoço</h4>
-                  <p className="text-gray-600">Melhora a firmeza da pele, prevenindo a flacidez.</p>
+                      <strong>Acetato de Retinila (Vitamina A):</strong> Hidrata o couro cabeludo, acelera renovação celular e promove crescimento.
                 </div>
+                  </li>
+
+                  <li className="flex items-start space-x-3">
+                    <img src="/images/foliculo.png" alt="DL-Alfatocoferila" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
+                    <div>
+                      <strong>DL-Alfatocoferila (Vitamina E):</strong> Protege com ação antioxidante, melhora circulação e fortalece fios.
               </div>
+                  </li>
+
+                  <li className="flex items-start space-x-3">
+                    <img src="/images/foliculo.png" alt="Colágeno Hidrolisado" className="w-8 h-8 object-cover rounded-full flex-shrink-0 mt-1" />
+                <div>
+                      <strong>Colágeno Hidrolisado:</strong> Aumenta elasticidade, fortalece fios e hidrata o couro cabeludo.
+                </div>
+                  </li>
+                </>
+              )}
+            </ul>
+
+            {/* Link para expandir/recolher ingredientes */}
+            <div className="text-center mt-6">
+              <button
+                onClick={() => setShowAllIngredients(!showAllIngredients)}
+                className="text-green-600 hover:text-green-700 font-medium underline cursor-pointer transition-colors duration-200"
+              >
+                {showAllIngredients ? 'Ocultar ingredientes' : 'Exibir todos os ingredientes'}
+              </button>
             </div>
 
             <div className="pt-4">
@@ -122,20 +161,18 @@ export default function Kits() {
             </div>
           </div>
 
-          {/* Right Column - Video - Desktop only */}
+          {/* Right Column - Image - Desktop only */}
           <div className="hidden md:flex justify-center order-2">
-            <div className="w-full max-w-2xl aspect-video">
-              <iframe
-                src="https://player.vimeo.com/video/1122343689?autoplay=1&loop=1&muted=1&controls=0&background=1&autopause=0&playsinline=1"
-                className="w-full h-full rounded-lg"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                title="L Skin Derm em ação"
-              ></iframe>
+            <div className="w-full max-w-xl">
+              <img
+                src="/images/foliculos.png"
+                alt="Folículos capilares"
+                className="w-full h-auto rounded-lg object-contain"
+              />
             </div>
           </div>
         </div>
+
       </div>
       
       {/* Gradient separator line */}

@@ -32,10 +32,10 @@ export default function Guarantee() {
                 Proteção completa
               </h3>
               <p className="text-lg text-gray-600 mb-6">
-                Oferecemos uma garantia de 180 dias contra defeitos ou falhas no Massageador Antiflacidez. Caso ocorra qualquer problema, enviaremos um produto novo totalmente grátis, sem complicações ou burocracias.
+                Oferecemos uma garantia de 30 dias no Biocapilar. Caso você não goste dos resultados, você pode devolver, e nós devolveremos 100% do seu dinheiro!
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Estamos tão confiantes na qualidade e durabilidade do nosso produto que assumimos todo o risco. Você tem 180 dias para usar com tranquilidade e comprovar a excelência. Conforme nossos termos.
+                Estamos tão confiantes na qualidade e durabilidade do nosso produto que assumimos todo o risco. Você tem 30 dias para usar com tranquilidade e comprovar a excelência. Conforme nossos termos.
               </p>
             </div>
 

@@ -8,48 +8,38 @@ export default function FAQ() {
   const faqs = [
     {
       id: 1,
-      question: "Como funciona o L Skin Derm Anti-flacidez?",
-      answer: "O Antiflacidez massageador utiliza tecnologia de calor e frio para estimular a circulação sanguínea e promover a produção de colágeno. Com apenas 15 minutos por dia, você pode combater a flacidez facial, reduzir linhas de expressão e melhorar a firmeza da pele."
+      question: "Como devo tomar o Biocapilar?",
+      answer: "Recomenda-se tomar 2 cápsulas por dia, preferencialmente antes das principais refeições. Para melhores resultados, tome uma cápsula 30 minutos antes do almoço e outra 30 minutos antes do jantar, sempre com um copo de água."
     },
     {
       id: 2,
-      question: "Quanto tempo leva para ver resultados?",
-      answer: "A maioria dos usuários começa a notar melhorias na firmeza da pele em 7-14 dias de uso regular. Para resultados mais significativos, recomendamos o uso contínuo por 30-60 dias, seguindo as instruções do produto."
+      question: "Qual é a composição?",
+      answer: "Biocapilar é composto por: Nicotinamida (Vitamina B3), D-Pantotenato de Cálcio (Vitamina B5), Cloridrato de Piridoxina (Vitamina B6), D-Biotina (Vitamina B7), Zinco, Sulfato Cúprico (Cobre), Acetato de Retinila (Vitamina A), DL-Alfatocoferila (Vitamina E) e Colágeno Hidrolisado. Nove poderosos ingredientes que juntos promovem um crescimento capilar saudável e totalmente natural."
     },
     {
       id: 3,
-      question: "O produto é seguro para todos os tipos de pele?",
-      answer: "Sim, o Antiflacidez massageador L Skin Derm foi desenvolvido para ser seguro para todos os tipos de pele. No entanto, recomendamos fazer um teste em uma pequena área antes do uso completo, especialmente se você tem pele sensível ou condições dermatológicas específicas."
+      question: "Preciso usar outros produtos?",
+      answer: "Não é necessário! Inclusive a fórmula é tão eficaz e em alguns casos melhor que os produtos vendidos em farmácia. O Biocapilar age de dentro para fora, tratando a raiz do problema de forma natural e sem efeitos colaterais."
     },
     {
       id: 4,
-      question: "Posso usar o produto todos os dias?",
-      answer: "Sim, o produto foi desenvolvido para uso diário. Recomendamos 15 minutos por dia para obter os melhores resultados. O uso consistente é fundamental para alcançar os benefícios desejados."
+      question: "Quanto tempo demora para ver resultados no cabelo?",
+      answer: "Os primeiros resultados começam a aparecer nas primeiras semanas de uso, com redução da queda e fortalecimento dos fios. O crescimento e espessamento mais significativo torna-se visível a partir do segundo mês de uso contínuo."
     },
     {
       id: 5,
-      question: "Qual é a garantia do produto?",
-      answer: "Oferecemos uma garantia total de 180 dias contra defeitos ou falhas. Caso ocorra qualquer problema, enviaremos um produto novo totalmente grátis, sem complicações ou burocracias."
+      question: "O Biocapilar tem efeitos colaterais?",
+      answer: "Por ser um produto 100% natural, o Biocapilar não apresenta efeitos colaterais. Você pode tomar sem riscos e aproveitar todos os benefícios. Importante: pessoas que possuem alergias a crustáceos não devem utilizar."
     },
     {
       id: 6,
-      question: "Como devo limpar e armazenar o produto?",
-      answer: "Limpe o produto com um pano úmido após cada uso e seque completamente. Armazene em local seco e à temperatura ambiente. Evite exposição direta ao sol ou umidade excessiva."
+      question: "Como funciona a garantia de satisfação?",
+      answer: "Oferecemos 30 dias de garantia incondicional. Se você não ficar satisfeito com os resultados, basta entrar em contato com nosso atendimento e solicitar o reembolso total do seu investimento, conforme os nossos termos de garantia. Você não tem riscos."
     },
     {
       id: 7,
-      question: "O produto funciona para homens também?",
-      answer: "Sim, o Antiflacidez massageador L Skin Derm é eficaz para homens e mulheres. A tecnologia de calor e frio beneficia todos os tipos de pele, independentemente do gênero."
-    },
-    {
-      id: 8,
-      question: "Posso usar cremes ou séruns junto com o massageador?",
-      answer: "Sim, você pode usar o massageador junto com seus cremes e séruns habituais. Na verdade, isso pode potencializar os resultados, pois o massageador ajuda na penetração dos ativos dos produtos de skincare."
-    },
-    {
-      id: 9,
       question: "Qual o prazo de entrega?",
-      answer: "As entregas são realizadas via correios, e o prazo é entre 20 a 22 dias."
+      answer: "O prazo médio de entrega é de 5 a 10 dias úteis para todo Brasil. Após a confirmação do pagamento, você receberá o código de rastreamento para acompanhar sua encomenda."
     }
   ]
 

@@ -1,83 +1,168 @@
 
+"use client"
+
+import { useState, useRef, useEffect } from 'react'
+
 export default function Features() {
+  const [isDragging, setIsDragging] = useState(false)
+  const [startX, setStartX] = useState(0)
+  const [scrollLeft, setScrollLeft] = useState(0)
+  const carouselRef = useRef<HTMLDivElement>(null)
+
+  // Auto-scroll effect
+  useEffect(() => {
+    if (!carouselRef.current || isDragging) return
+
+    const interval = setInterval(() => {
+      if (carouselRef.current) {
+        carouselRef.current.scrollLeft += 1
+        if (carouselRef.current.scrollLeft >= carouselRef.current.scrollWidth - carouselRef.current.clientWidth) {
+          carouselRef.current.scrollLeft = 0
+        }
+      }
+    }, 30)
+
+    return () => clearInterval(interval)
+  }, [isDragging])
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setIsDragging(true)
+    setStartX(e.pageX - (carouselRef.current?.offsetLeft || 0))
+    setScrollLeft(carouselRef.current?.scrollLeft || 0)
+  }
+
+  const handleMouseLeave = () => {
+    setIsDragging(false)
+  }
+
+  const handleMouseUp = () => {
+    setIsDragging(false)
+  }
+
+  const handleMouseEnter = () => {
+    setIsDragging(true) // Pause auto-scroll on hover
+  }
+
+  const handleMouseLeaveResume = () => {
+    setIsDragging(false) // Resume auto-scroll when not hovering
+  }
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !carouselRef.current) return
+    e.preventDefault()
+    const x = e.pageX - (carouselRef.current.offsetLeft || 0)
+    const walk = (x - startX) * 2
+    carouselRef.current.scrollLeft = scrollLeft - walk
+  }
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setIsDragging(true)
+    setStartX(e.touches[0].pageX - (carouselRef.current?.offsetLeft || 0))
+    setScrollLeft(carouselRef.current?.scrollLeft || 0)
+  }
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isDragging || !carouselRef.current) return
+    e.preventDefault()
+    const x = e.touches[0].pageX - (carouselRef.current.offsetLeft || 0)
+    const walk = (x - startX) * 2
+    carouselRef.current.scrollLeft = scrollLeft - walk
+  }
+
+  const handleTouchEnd = () => {
+    setIsDragging(false)
+  }
+
   return (
     <section id="beneficios" className="section-padding bg-white">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          O seu lifiting diário. Resultados que transformam a autoestima
+          O seu melhor aliado. Resultados que transformam a autoestima!
         </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Recebemos depoimentos como esses diariamente. Fotos de mulheres que transformaram sua pele e resgataram a sua autoestima com o L Skin Derm.
+            Recebemos depoimentos incríveis todos os dias: histórias de pessoas que interromperam a queda, preencheram as falhas e recuperaram a confiança.
           </p>
         </div>
 
         {/* Image Carousel */}
         <div className="mb-16 -mx-4 sm:-mx-6 lg:-mx-8 overflow-hidden">
-          <div className="flex animate-scroll">
-            <div className="flex space-x-0">
+          <div 
+            ref={carouselRef}
+            className="flex overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing"
+            onMouseDown={handleMouseDown}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeaveResume}
+            onMouseUp={handleMouseUp}
+            onMouseMove={handleMouseMove}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            <div className="flex space-x-4">
               {/* First set */}
               <img
                 src="/images/d1.png"
                 alt="Depoimento 1"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d5.png"
                 alt="Depoimento 5"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d2.png"
                 alt="Depoimento 2"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d4.png"
                 alt="Depoimento 4"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d3.png"
                 alt="Depoimento 3"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d6.png"
                 alt="Depoimento 6"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
               {/* Second set for seamless loop */}
               <img
                 src="/images/d1.png"
                 alt="Depoimento 1"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d5.png"
                 alt="Depoimento 5"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d2.png"
                 alt="Depoimento 2"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d4.png"
                 alt="Depoimento 4"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d3.png"
                 alt="Depoimento 3"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
               <img
                 src="/images/d6.png"
                 alt="Depoimento 6"
-                className="h-64 w-auto object-contain flex-shrink-0"
+                className="h-56 md:h-72 w-auto object-contain flex-shrink-0"
               />
             </div>
           </div>

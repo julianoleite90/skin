@@ -25,7 +25,7 @@ export default function Hero() {
             <div className="lg:hidden">
               {/* Main Image */}
               <div className="relative z-10 mb-4">
-                <div className="w-full aspect-square max-w-[350px] mx-auto">
+                <div className="w-full aspect-square max-w-[550px] mx-auto">
                   <img
                     src={productImages[selectedImage].main}
                     alt="SkinLift Pro - Lifting Facial"
@@ -37,13 +37,13 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              <span className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">Rejuvenesça sua pele:</span><br />
-              Firmeza e juventude sem agulhas!
+              <span className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">Acabe com a queda:</span><br />
+              Cabelos mais fortes e sem entradas!
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl text-gray-600 leading-relaxed pt-2 md:pt-8 lg:pt-8">
-              Cansada de olhar no espelho e ver rugas ou flacidez? Com apenas 15 minutos por dia, você pode recuperar a pele jovem e a confiança que merece.
+              Está frustrado com a queda de cabelo e as entradas cada vez mais visíveis? Diga adeus à queda e dê as boas-vindas ao crescimento de novos fios! Recupere a densidade, preencha as falhas e conquiste cabelos fortes, saudáveis e cheios de vida novamente!
             </p>
 
 
@@ -51,9 +51,9 @@ export default function Hero() {
                     <div className="flex justify-center md:justify-start pt-4 lg:pt-6">
                       <button 
                         onClick={() => {
-                          const testimonialsSection = document.getElementById('testimonials');
-                          if (testimonialsSection) {
-                            testimonialsSection.scrollIntoView({ behavior: 'smooth' });
+                          const kitsSection = document.getElementById('kits');
+                          if (kitsSection) {
+                            kitsSection.scrollIntoView({ behavior: 'smooth' });
                           }
                         }}
                         className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white font-semibold py-4 px-20 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
@@ -79,7 +79,7 @@ export default function Hero() {
           <div className="relative hidden lg:block">
             {/* Main Image */}
             <div className="relative z-10 mb-4 translate-y-20 -mt-20">
-              <div className="w-full aspect-square max-w-[600px] mx-auto">
+              <div className="w-full aspect-square max-w-[900px] mx-auto">
                 <img
                   src={productImages[selectedImage].main}
                   alt="SkinLift Pro - Lifting Facial"

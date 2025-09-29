@@ -9,8 +9,8 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center justify-start flex-1 pl-4 md:pl-0">
             <img 
-              src="/images/logo-skinderm.png" 
-              alt="SkinLift Pro Logo" 
+              src="/images/logo-biocapilar.png" 
+              alt="Biocapilar Logo" 
               className="w-[120px] h-[120px] md:w-[160px] md:h-[160px] object-contain"
             />
           </div>

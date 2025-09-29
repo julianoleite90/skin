@@ -3,7 +3,7 @@
 export default function WhatsAppButton() {
   const handleWhatsAppClick = () => {
     const phoneNumber = "5541984549172";
-    const message = "Olá! Eu estava no site do Antiflacidez facial, e gostaria de comprar.";
+    const message = "Olá! Eu estava no site do Biocapilar, e gostaria de comprar.";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
