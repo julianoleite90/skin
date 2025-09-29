@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'L Skin Derm Anti-flacidez Funciona? Saiba tudo aqui!',
     description: 'Descubra como o L Skin Derm Anti-flacidez funciona, seus benefícios e resultados reais.',
-    url: 'https://lskinderm.com/antiflacidez-funciona',
+    url: 'https://phynamax.com.br/antiflacidez-funciona',
     images: ['/images/og-blog.jpg'],
   },
   alternates: {
@@ -35,14 +35,14 @@ const blogSchema = {
     "name": "L&L Skin",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://lskinderm.com/images/logo-skinderm.png"
+      "url": "https://phynamax.com.br/images/logo-skinderm.png"
     }
   },
   "datePublished": "2024-01-15",
   "dateModified": "2024-01-15",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://lskinderm.com/antiflacidez-funciona"
+    "@id": "https://phynamax.com.br/antiflacidez-funciona"
   }
 }
 

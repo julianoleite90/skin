@@ -5,14 +5,14 @@ export async function GET() {
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
     <title>Phynamax - Suplemento para Emagrecimento</title>
-    <link>https://lskinderm.com</link>
+    <link>https://phynamax.com.br</link>
     <description>Suplemento com 6 ingredientes poderosos para emagrecimento saudável. Reduz fome, acelera metabolismo e queima gordura de forma natural.</description>
     <item>
       <g:id>phynamax-001</g:id>
       <g:title>Phynamax - Suplemento para Emagrecimento</g:title>
       <g:description>Suplemento com 6 ingredientes poderosos para emagrecimento saudável. Reduz fome, acelera metabolismo e queima gordura de forma natural. Garantia de 30 dias.</g:description>
-      <g:link>https://lskinderm.com</g:link>
-      <g:image_link>https://lskinderm.com/images/2-min.png</g:image_link>
+      <g:link>https://phynamax.com.br</g:link>
+      <g:image_link>https://phynamax.com.br/images/2-min.png</g:image_link>
       <g:brand>Phynamax</g:brand>
       <g:condition>new</g:condition>
       <g:availability>in stock</g:availability>

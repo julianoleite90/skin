@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/private/', '/admin/'],
     },
-    sitemap: 'https://lskinderm.com/sitemap.xml',
+    sitemap: 'https://phynamax.com.br/sitemap.xml',
   }
 }

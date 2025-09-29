@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Termos de Uso - L Skin Derm Anti-flacidez',
     description: 'Termos de uso do L Skin Derm Anti-flacidez. Conheça as condições de compra e entrega.',
-    url: 'https://lskinderm.com/termos-uso',
+    url: 'https://phynamax.com.br/termos-uso',
     images: ['/images/og-termos.jpg'],
   },
   alternates: {

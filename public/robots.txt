@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://lskinderm.com/sitemap.xml
+Sitemap: https://phynamax.com.br/sitemap.xml
 
 # Disallow admin and private areas
 Disallow: /admin/

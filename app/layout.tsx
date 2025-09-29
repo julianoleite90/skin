@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://lskinderm.com'),
+  metadataBase: new URL('https://phynamax.com.br'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Phynamax - Emagreça de Forma Saudável',
     description: 'Emagreça de forma saudável com Phynamax! 6 ingredientes poderosos para perda de peso natural. Reduz fome, acelera metabolismo. Garantia 30 dias.',
-    url: 'https://lskinderm.com',
+    url: 'https://phynamax.com.br',
     siteName: 'Phynamax - Emagrecimento Saudável',
     images: [
       {

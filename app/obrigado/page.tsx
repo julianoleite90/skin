@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Compra Realizada - L Skin Derm Anti-flacidez',
     description: 'Compra realizada com sucesso! Acompanhe os próximos passos do seu pedido.',
-    url: 'https://lskinderm.com/obrigado',
+    url: 'https://phynamax.com.br/obrigado',
     images: ['/images/og-obrigado.jpg'],
   },
   alternates: {
@@ -140,7 +140,7 @@ export default function ObrigadoPage() {
               Nossa equipe está pronta para te ajudar com qualquer dúvida sobre seu pedido.
             </p>
             <div className="space-y-2 text-sm text-gray-600">
-              <p>📧 contato@lskinderm.com</p>
+              <p>📧 sac@bourjun.com.br</p>
               <p>📱 (41) 98454-9172</p>
             </div>
           </div>

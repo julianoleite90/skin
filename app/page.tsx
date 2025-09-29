@@ -31,9 +31,9 @@ const productSchema = {
   "name": "Phynamax - Suplemento para Emagrecimento",
   "description": "Suplemento com 6 ingredientes poderosos para emagrecimento saudável. Reduz fome, acelera metabolismo e queima gordura de forma natural. Resultados em poucas semanas.",
   "image": [
-    "https://lskinderm.com/images/2-min.png",
-    "https://lskinderm.com/images/hot.png",
-    "https://lskinderm.com/images/atuando.png"
+    "https://phynamax.com.br/images/2-min.png",
+    "https://phynamax.com.br/images/hot.png",
+    "https://phynamax.com.br/images/atuando.png"
   ],
   "brand": {
     "@type": "Brand",
@@ -104,8 +104,8 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Phynamax",
-  "url": "https://lskinderm.com",
-  "logo": "https://lskinderm.com/images/logo-rosa-phynamax.png",
+  "url": "https://phynamax.com.br",
+  "logo": "https://phynamax.com.br/images/logo-rosa-phynamax.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+55-41-98454-9172",
@@ -132,7 +132,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://lskinderm.com"
+      "item": "https://phynamax.com.br"
     }
   ]
 }
