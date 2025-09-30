@@ -1,9 +1,30 @@
 "use client"
 
+import { useEffect } from 'react'
+
 export default function Header() {
+  useEffect(() => {
+    // Force header to be fixed
+    const header = document.querySelector('header')
+    if (header) {
+      header.style.position = 'fixed'
+      header.style.top = '0'
+      header.style.left = '0'
+      header.style.right = '0'
+      header.style.zIndex = '9999'
+      header.style.width = '100%'
+    }
+  }, [])
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white shadow-sm" style={{ 
+      position: 'fixed', 
+      top: 0, 
+      left: 0, 
+      right: 0, 
+      zIndex: 9999, 
+      width: '100%' 
+    }}>
       <div className="container-custom">
         <div className="flex items-center justify-between h-12 md:h-16">
           {/* Logo */}
