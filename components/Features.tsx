@@ -223,7 +223,7 @@ export default function Features() {
               </div>
               <div className="flex-1">
                 <p className="text-xs md:text-sm text-gray-600">PARCELAMENTO</p>
-                <p className="text-sm md:text-base font-bold text-gray-800">ATÉ 12X s/ JUROS</p>
+                <p className="text-sm md:text-base font-bold text-gray-800">SEM JUROS</p>
               </div>
             </div>
 
