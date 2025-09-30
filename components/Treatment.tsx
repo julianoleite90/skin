@@ -1,31 +1,13 @@
 "use client"
 
-import { useState } from 'react'
-import StockCheckPopup from './StockCheckPopup'
-import { useGeolocation } from '@/hooks/useGeolocation'
-
 export default function Treatment() {
-  const [showPopup, setShowPopup] = useState(false)
-  const [selectedKit, setSelectedKit] = useState<'1' | '3' | '5'>('1')
-  const { location } = useGeolocation()
-
   const handleBuyClick = (kitType: '1' | '3' | '5') => {
-    setSelectedKit(kitType)
-    setShowPopup(true)
-  }
-
-  const handleRedirect = () => {
-    // Fechar popup primeiro
-    setShowPopup(false)
-    // Aguardar um pouco e redirecionar
-    setTimeout(() => {
-      const urls = {
-        '1': 'https://full.sale/eANTht?src=site-oficial',
-        '3': 'https://full.sale/k0E9wK?src=site-oficial',
-        '5': 'https://full.sale/8mYNoQ'
-      }
-      window.location.href = urls[selectedKit]
-    }, 100)
+    const urls = {
+      '1': 'https://full.sale/eANTht?src=site-oficial',
+      '3': 'https://full.sale/k0E9wK?src=site-oficial',
+      '5': 'https://full.sale/8mYNoQ'
+    }
+    window.location.href = urls[kitType]
   }
   return (
     <section id="treatment" className="section-padding bg-white relative">
@@ -162,14 +144,6 @@ export default function Treatment() {
       
       {/* Gradient separator line */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pink-400 to-transparent"></div>
-      
-      {/* Stock Check Popup */}
-      <StockCheckPopup
-        isOpen={showPopup}
-        onClose={() => setShowPopup(false)}
-        onRedirect={handleRedirect}
-        city={location?.city || 'Sua cidade'}
-      />
     </section>
   )
 }
