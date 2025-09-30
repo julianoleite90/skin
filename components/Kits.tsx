@@ -9,13 +9,10 @@ export default function Kits() {
         {/* Header */}
         <div className="text-center mb-8 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Como funciona?
+            Como Funciona?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Simples e Eficaz para Emagrecer com Phynamax!
-          </p>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Cada cápsula de Phynamax contém 600mg, e você deve tomar 2 cápsulas ao dia, totalizando 1200mg. Tome 30 minutos antes das refeições, com um copo d'água.
+            O Segredo está nos ingredientes que aumentam a saciedade, eliminam a fome excessiva e regulam o organismo
           </p>
             </div>
 

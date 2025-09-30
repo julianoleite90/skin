@@ -10,10 +10,10 @@ export default function BeforeAfter() {
         {/* Header */}
         <div className="text-center mb-4 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Depoimentos inspiradores
+            Resultados reais
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Veja os resultados de pessoas que precisavam perder peso e atingiram os seus objetivos com Phynamax!
+          <p className="text-lg text-gray-700 max-w-4xl mx-auto mt-4 font-medium">
+            Nossos clientes relatam uma perda de peso de 5 a 15kg em apenas 3 meses. Veja os relatos no vídeo.
           </p>
         </div>
 
@@ -23,13 +23,14 @@ export default function BeforeAfter() {
           <div className="space-y-6 order-2 md:order-1">
             <div className="text-center md:text-left">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Menos compulsão, menos absorção de gorduras, mais emagrecimento!
+                Menos compulsão, mais emagrecimento!
               </h3>
               <p className="text-lg text-gray-600 mb-6">
-                Phynamax oferece uma fórmula avançada que combina poderosas fibras alimentares, elevando seu metabolismo e saciedade. Quer perder peso de forma natural e segura, conquistando mais energia e confiança para viver bem?
+                Bioativos poderosos e fibras que regulam o organismo de dentro para fora, promovendo maior saciedade e acelerando o emagrecimento.
+                Quer perder peso de forma natural e segura, conquistando mais energia e confiança para viver bem?
               </p>
               <p className="text-lg text-gray-600 mb-6 font-semibold">
-                Emagrecimento real ao seu alcance!
+                Emagrecimento ao seu alcance!
               </p>
             </div>
 

@@ -76,10 +76,10 @@ export default function Features() {
         {/* Header */}
         <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          O seu melhor aliado na perda de peso. Resultados que transformam a autoestima!
+          Perca peso! Ganhe autoestima. Resultados transformadores.
         </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Recebemos depoimentos incríveis todos os dias: histórias de pessoas que emagreceram, e desfrutam de uma vida mais saudável.
+            Pessoas de todos os lugares compartilham seus resultados após o uso de Phynamax, o próximo pode ser o seu.
           </p>
         </div>
 

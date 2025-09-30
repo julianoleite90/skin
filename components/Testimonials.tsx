@@ -120,7 +120,7 @@ export default function Testimonials() {
             Recomendado por especialistas
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            As fibras alimentares do Phynamax aumentam a saciedade em até 30%, reduzindo a fome de forma eficaz, e controlando o apetite.
+            30% mais saciedade, redução dos impulsos e controle do apetite.
           </p>
         </div>
 
@@ -138,7 +138,7 @@ export default function Testimonials() {
               </p>
               
               <p className="text-xl text-gray-600 mt-4">
-                As fibras poderosas de alto impacto transformam seu intestino em uma máquina de queima calórica, disparando o metabolismo em até 27% com a produção de ácidos graxos que incineram calorias.
+                As fibras poderosas de alto impacto transformam seu intestino em uma máquina de queima calórica, disparando o metabolismo em até 27% com a produção de ácidos graxos que queimam calorias.
               </p>
               
               <p className="text-xl text-gray-600 mt-4">

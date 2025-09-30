@@ -37,13 +37,13 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              <span className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 bg-clip-text text-transparent">Perca peso mais rápido:</span><br />
-              Recupere a saúde e tenha mais qualidade de vida!
+              <span className="text-gray-900">Emagreça mais rápido!</span><br />
+              <span className="text-pink-500">Sem sacrifícios ou dietas restritivas</span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-xl text-gray-600 leading-relaxed pt-2 md:pt-8 lg:pt-8">
-              Cansada de dietas que não funcionam e exercícios que não dão resultado? Conheça a fórmula de Phynamax. Um poderoso emagrecedor natural, feito para quem busca emagrecimento saudável sem sacrifícios.
+            <p className="text-xl text-gray-600 leading-relaxed pt-0 md:pt-8 lg:pt-8">
+              Acabe com a compulsão alimentar e assuma o controle do seu corpo! Fórmula 100% natural para quem busca emagrecer mais rápido e controlar os impulsos alimentares.
             </p>
 
 

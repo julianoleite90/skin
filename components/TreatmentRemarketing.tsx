@@ -24,26 +24,26 @@ export default function TreatmentRemarketing() {
 
         {/* Kits Section */}
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {/* Kit 1 Frasco */}
+          {/* Kit 5 Frascos */}
           <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-gray-200 hover:border-green-500 transition-all duration-300">
             <div className="text-center">
               <img 
-                src="/images/1-frasco.png" 
-                alt="Phynamax 1 Frasco" 
+                src="/images/5-frascos.png" 
+                alt="Phynamax 5 Frascos" 
                 className="w-56 h-56 mx-auto mb-4 object-contain"
               />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">1 Frasco</h3>
-              <p className="text-gray-600 mb-4">30 dias de tratamento</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">5 Frascos</h3>
+              <p className="text-gray-600 mb-4">150 dias de tratamento</p>
               
               <div className="mb-4">
-                <span className="text-lg text-gray-500 line-through">De R$ 384,00</span>
-                <div className="text-2xl font-bold text-green-600">Por: 8x R$ 36,00</div>
+                <span className="text-lg text-gray-500 line-through">De R$ 1.087,00</span>
+                <div className="text-2xl font-bold text-green-600">Por: 8x R$ 57,00</div>
                 <div className="text-sm text-green-500 font-medium">sem juros</div>
-                <div className="text-sm text-gray-600">Ou R$255,60 à vista no PIX</div>
+                <div className="text-sm text-gray-600">Ganhe 10% de desconto no PIX</div>
               </div>
 
               <button 
-                onClick={() => handleBuyClick('1')}
+                onClick={() => handleBuyClick('5')}
                 className="w-full bg-gradient-to-r from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 COMPRAR AGORA
@@ -77,7 +77,7 @@ export default function TreatmentRemarketing() {
                 <span className="text-lg text-gray-500 line-through">De R$ 787,00</span>
                 <div className="text-2xl font-bold text-green-600">Por: 8x R$ 48,00</div>
                 <div className="text-sm text-green-500 font-medium">sem juros</div>
-                <div className="text-sm text-gray-600">Ou R$345,60 à vista no PIX</div>
+                <div className="text-sm text-gray-600">Ganhe 10% de desconto no PIX</div>
               </div>
 
               <button 
@@ -110,7 +110,7 @@ export default function TreatmentRemarketing() {
                 <span className="text-lg text-gray-500 line-through">De R$ 1.087,00</span>
                 <div className="text-2xl font-bold text-green-600">Por: 8x R$ 57,00</div>
                 <div className="text-sm text-green-500 font-medium">sem juros</div>
-                <div className="text-sm text-gray-600">Ou R$408,60 à vista no PIX</div>
+                <div className="text-sm text-gray-600">Ganhe 10% de desconto no PIX</div>
               </div>
 
               <button 
