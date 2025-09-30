@@ -9,9 +9,13 @@ export default function Features() {
   const [scrollLeft, setScrollLeft] = useState(0)
   const carouselRef = useRef<HTMLDivElement>(null)
 
-  // Auto-scroll effect
+  // Auto-scroll effect - only on desktop
   useEffect(() => {
     if (!carouselRef.current || isDragging) return
+
+    // Check if it's mobile (screen width < 768px)
+    const isMobile = window.innerWidth < 768
+    if (isMobile) return
 
     const interval = setInterval(() => {
       if (carouselRef.current) {
@@ -157,6 +161,19 @@ export default function Features() {
               />
             </div>
           </div>
+        </div>
+
+        {/* Disclaimer para mobile */}
+        <div className="md:hidden text-center mt-4">
+          <p className="text-sm text-gray-500 flex items-center justify-center space-x-2">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+            </svg>
+            <span>Arraste para o lado para ver mais</span>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </p>
         </div>
 
         {/* Trust Badges */}

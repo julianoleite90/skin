@@ -19,19 +19,14 @@ export default function Kits() {
           </p>
             </div>
 
-        {/* Video - Mobile only (above content) */}
+        {/* Image - Mobile only (above content) */}
         <div className="md:hidden flex justify-center mb-8">
           <div className="w-full max-w-2xl">
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                src="https://player.vimeo.com/video/1122908638?autoplay=1&muted=1&loop=1&controls=0&responsive=1&portrait=0&title=0&byline=0&badge=0&background=0&playsinline=1"
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                style={{ border: 'none' }}
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                playsInline
-              ></iframe>
-            </div>
+            <img
+              src="/images/colher.png"
+              alt="Phynamax - Como funciona"
+              className="w-full h-auto rounded-lg object-contain"
+            />
           </div>
         </div>
 
@@ -100,19 +95,14 @@ export default function Kits() {
             </div>
           </div>
 
-          {/* Right Column - Video - Desktop only */}
+          {/* Right Column - Image - Desktop only */}
           <div className="hidden md:flex justify-center order-2">
             <div className="w-full max-w-xl">
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <iframe
-                  src="https://player.vimeo.com/video/1122908638?autoplay=1&muted=1&loop=1&controls=0&responsive=1&portrait=0&title=0&byline=0&badge=0&background=0&playsinline=1"
-                  className="absolute top-0 left-0 w-full h-full rounded-lg"
-                  style={{ border: 'none' }}
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  playsInline
-                ></iframe>
-              </div>
+              <img
+                src="/images/colher.png"
+                alt="Phynamax - Como funciona"
+                className="w-full h-auto rounded-lg object-contain"
+              />
             </div>
           </div>
         </div>
